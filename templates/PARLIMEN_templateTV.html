@@ -1,0 +1,10 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the PARLIMEN_init() hook (in hooks/PARLIMEN.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="PARLIMEN-nama_parlimen-<%%VALUE(id)%%>" class="PARLIMEN-nama_parlimen"><%%SELECT%%><%%VALUE(nama_parlimen)%%><%%ENDSELECT%%></td>
+		<td id="PARLIMEN-daerah-<%%VALUE(id)%%>" class="PARLIMEN-daerah"><%%SELECT%%><%%VALUE(daerah)%%><%%ENDSELECT%%></td>
+		<td id="PARLIMEN-negeri-<%%VALUE(id)%%>" class="PARLIMEN-negeri"><%%SELECT%%><%%VALUE(negeri)%%><%%ENDSELECT%%></td>

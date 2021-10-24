@@ -1,0 +1,571 @@
+<!-- To change the layout of the detail view form, we recommend using JS code in hooks/jpd_de-dv.js rather than editing this file -->
+
+<div id="detail-view"></div>
+<div class="panel-heading"><h3 class="panel-title"><strong><%%DETAIL_VIEW_TITLE%%></strong></h3></div>
+
+<div id="jpd_de_dv_container-loading" class="text-center text-info text-bold vspacer-lg"><i class="glyphicon glyphicon-refresh loop-rotate"></i> <%%TRANSLATION(Loading ...)%%></div>
+
+<div class="panel-body hidden" id="jpd_de_dv_container">
+	<!-- child links -->
+	<div class="row vspacer-md">
+		<div class="col-xs-12 children-links">
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+	<div class="row">
+		<!-- form inputs -->
+		<div class="col-md-8 col-lg-10" id="jpd_de_dv_form">
+			<fieldset class="form-horizontal">
+
+				<!-- Field: ID -->
+				<div class="form-group jpd_de-ID">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="ID">ID</label>
+					<div class="col-lg-9">
+						<div class="form-control-static" id="ID"><%%VALUE(ID)%%></div>
+					</div>
+				</div>
+
+				<!-- Field: Tahun laksana -->
+				<div class="form-group jpd_de-tahun_laksana">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="tahun_laksana" data-parent_link="view_parent_modal">Tahun laksana</label>
+					<div class="col-lg-9">
+						<div class="form-control-static" style="white-space: nowrap; overflow-x: hidden;"><%%COMBO(tahun_laksana)%%><%%PLINK(tahun_laksana)%%><%%ADDNEW(tahun)%%></div>
+					</div>
+				</div>
+
+				<!-- Field: Sumber Peruntukan -->
+				<div class="form-group jpd_de-Waran">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="Waran" data-parent_link="view_parent_modal">Sumber Peruntukan</label>
+					<div class="col-lg-9">
+						<div class="form-control-static" style="white-space: nowrap; overflow-x: hidden;"><%%COMBO(Waran)%%><%%PLINK(Waran)%%><%%ADDNEW(waran)%%></div>
+					</div>
+				</div>
+
+				<!-- Field: Kelulusan -->
+				<div class="form-group jpd_de-Kelulusan">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="Kelulusan" data-parent_link="view_parent_modal">Kelulusan</label>
+					<div class="col-lg-9">
+						<div class="form-control-static" style="white-space: nowrap; overflow-x: hidden;"><%%COMBO(Kelulusan)%%><%%PLINK(Kelulusan)%%><%%ADDNEW(kelulusan)%%></div>
+					</div>
+				</div>
+
+				<!-- Field: Nama Projek -->
+				<div class="form-group jpd_de-NamaProjek">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="NamaProjek">Nama Projek</label>
+					<div class="col-lg-9">
+						<textarea class="form-control" name="NamaProjek" id="NamaProjek" rows=" 5"><%%VALUE(NamaProjek)%%></textarea>
+					</div>
+				</div>
+
+				<!-- Field: Negeri -->
+				<div class="form-group jpd_de-negeri">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="negeri" data-parent_link="view_parent_modal">Negeri</label>
+					<div class="col-lg-9">
+						<div class="form-control-static" style="white-space: nowrap; overflow-x: hidden;"><%%COMBO(negeri)%%><%%PLINK(negeri)%%><%%ADDNEW(negeri)%%></div>
+					</div>
+				</div>
+
+				<!-- Field: Daerah -->
+				<div class="form-group jpd_de-Daerah">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="Daerah" data-parent_link="view_parent_modal">Daerah</label>
+					<div class="col-lg-9">
+						<div class="form-control-static" style="white-space: nowrap; overflow-x: hidden;"><%%COMBO(Daerah)%%><%%PLINK(Daerah)%%><%%ADDNEW(daerah)%%></div>
+					</div>
+				</div>
+
+				<!-- Field: Parlimen -->
+				<div class="form-group jpd_de-Parlimen">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="Parlimen" data-parent_link="view_parent_modal">Parlimen</label>
+					<div class="col-lg-9">
+						<div class="form-control-static" style="white-space: nowrap; overflow-x: hidden;"><%%COMBO(Parlimen)%%><%%PLINK(Parlimen)%%><%%ADDNEW(PARLIMEN)%%></div>
+					</div>
+				</div>
+
+				<!-- Field: DUN -->
+				<div class="form-group jpd_de-DUN">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="DUN" data-parent_link="view_parent_modal">DUN</label>
+					<div class="col-lg-9">
+						<div class="form-control-static" style="white-space: nowrap; overflow-x: hidden;"><%%COMBO(DUN)%%><%%PLINK(DUN)%%><%%ADDNEW(Dun)%%></div>
+					</div>
+				</div>
+
+				<!-- Field: Agensi Pelaksana -->
+				<div class="form-group jpd_de-AgensiPelaksana">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="AgensiPelaksana" data-parent_link="view_parent_modal">Agensi Pelaksana</label>
+					<div class="col-lg-9">
+						<div class="form-control-static" style="white-space: nowrap; overflow-x: hidden;"><%%COMBO(AgensiPelaksana)%%><%%PLINK(AgensiPelaksana)%%><%%ADDNEW(agensi_pelaksana)%%></div>
+					</div>
+				</div>
+
+				<!-- Field: AGENSI PEMBAYAR -->
+				<div class="form-group jpd_de-agensi_pembayar">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="agensi_pembayar" data-parent_link="view_parent_modal">AGENSI PEMBAYAR</label>
+					<div class="col-lg-9">
+						<div class="form-control-static" style="white-space: nowrap; overflow-x: hidden;"><%%COMBO(agensi_pembayar)%%><%%PLINK(agensi_pembayar)%%><%%ADDNEW(agensi_bayar)%%></div>
+					</div>
+				</div>
+
+				<!-- Field: Sumber Permohonan -->
+				<div class="form-group jpd_de-sumber_permohonan">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="sumber_permohonan">Sumber Permohonan</label>
+					<div class="col-lg-9">
+						<input maxlength="40" type="text" class="form-control" name="sumber_permohonan" id="sumber_permohonan" value="<%%VALUE(sumber_permohonan)%%>">
+					</div>
+				</div>
+
+				<!-- Field: Nama Kontraktor -->
+				<div class="form-group jpd_de-NamaKontraktor">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="NamaKontraktor">Nama Kontraktor</label>
+					<div class="col-lg-9">
+						<input maxlength="255" type="text" class="form-control" name="NamaKontraktor" id="NamaKontraktor" value="<%%VALUE(NamaKontraktor)%%>">
+					</div>
+				</div>
+
+				<!-- Field: Tarikh SST -->
+				<div class="form-group jpd_de-TarikhSST">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="TarikhSST-dd">Tarikh SST</label>
+					<div class="col-lg-9">
+						<%%COMBO(TarikhSST)%%>
+					</div>
+				</div>
+
+				<!-- Field: Tarikh Siap Fizikal -->
+				<div class="form-group jpd_de-TarikhSiapProjek">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="TarikhSiapProjek-dd">Tarikh Siap Fizikal</label>
+					<div class="col-lg-9">
+						<%%COMBO(TarikhSiapProjek)%%>
+					</div>
+				</div>
+
+				<!-- Field: Tarikh Siap Sepenuhnya -->
+				<div class="form-group jpd_de-TarikhSiapsebenar">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="TarikhSiapsebenar-dd">Tarikh Siap Sepenuhnya</label>
+					<div class="col-lg-9">
+						<%%COMBO(TarikhSiapsebenar)%%>
+					</div>
+				</div>
+
+				<!-- Field: Panjang Jalan (M) -->
+				<div class="form-group jpd_de-PanjangJalanM">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="PanjangJalanM">Panjang Jalan (M)</label>
+					<div class="col-lg-9">
+						<input type="text" class="form-control" name="PanjangJalanM" id="PanjangJalanM" value="<%%VALUE(PanjangJalanM)%%>">
+					</div>
+				</div>
+
+				<!-- Field: Lebar (M) -->
+				<div class="form-group jpd_de-LebarM">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="LebarM">Lebar (M)</label>
+					<div class="col-lg-9">
+						<input type="text" class="form-control" name="LebarM" id="LebarM" value="<%%VALUE(LebarM)%%>">
+					</div>
+				</div>
+
+				<!-- Field: Skop Kerja -->
+				<div class="form-group jpd_de-skop">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="skop" data-parent_link="view_parent_modal">Skop Kerja</label>
+					<div class="col-lg-9">
+						<div class="form-control-static" style="white-space: nowrap; overflow-x: hidden;"><%%COMBO(skop)%%><%%PLINK(skop)%%><%%ADDNEW(skop_jpd)%%></div>
+					</div>
+				</div>
+
+				<!-- Field: Gambar -->
+				<div class="form-group jpd_de-gambar1">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3">Gambar <i class="glyphicon glyphicon-info-sign text-info" data-toggle="collapse" data-target="#gambar1-description"></i></label>
+					<div class="col-lg-9">
+						<span class="help-block bspacer-xs collapse" id="gambar1-description"><div class="alert alert-info bspacer-xs">Maximum file size allowed: 10000 KB.<br>Allowed file types: jpg, jpeg, gif, png</div></span>
+						<div class="form-control-static well well-sm">
+							<div class="pull-left"><a href="<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar1)%%>" data-lightbox="jpd_de_dv"><img src="thumbnail.php?i=<%%VALUE(gambar1)%%>&t=jpd_de&f=gambar1&v=dv" class="img-thumbnail" id="gambar1-image"></a></div>
+							<div class="pull-right well upload-toolbox">
+								<div class="hidden-md hidden-lg vspacer-lg"></div>
+								<%%UPLOADFILE(gambar1)%%>
+								<%%REMOVEFILE(gambar1)%%>
+								<div class="text-bold text-danger file-type-error hidden"><%%TRANSLATION(invalid file type)%%></div>
+								<div class="text-bold text-danger file-size-error hidden"><%%TRANSLATION(file too large)%%></div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<script>/* disable links to empty images */ $j(function() { var e_gambar1 = '<%%VALUE(gambar1)%%>'; if(e_gambar1 == '' || e_gambar1 == '&nbsp;' || e_gambar1 == 'blank.gif') { $j('#gambar1-link').hide(); $j('#gambar1-image').parents('a').attr('href', '').on('click', function(e) { e.preventDefault(); }); } });</script>
+					</div>
+				</div>
+
+				<!-- Field: Latitud -->
+				<div class="form-group jpd_de-Latitud">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="Latitud">Latitud</label>
+					<div class="col-lg-9">
+						<input maxlength="255" type="text" class="form-control" name="Latitud" id="Latitud" value="<%%VALUE(Latitud)%%>">
+					</div>
+				</div>
+
+				<!-- Field: Peta -->
+				<div class="form-group jpd_de-Peta">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="Peta-edit-link">Peta</label>
+					<div class="col-lg-9">
+						<div class="form-control-static"><div class="rspacer-lg"><%%GOOGLEMAP(Peta)%%></div><label for="Peta"><button type="button" id="Peta-edit-link" class="btn btn-default vspacer-sm" data-toggle="collapse" data-target="#Peta" title="<%%TRANSLATION(Edit)%%>"><i class="glyphicon glyphicon-pencil"></i></button></label><input maxlength="255" type="text" class="form-control collapse" name="Peta" id="Peta" value="<%%VALUE(Peta)%%>"></div>
+					</div>
+				</div>
+
+				<!-- Field: Peruntukan Diluluskan -->
+				<div class="form-group jpd_de-PeruntukanDiluluskan">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="PeruntukanDiluluskan">Peruntukan Diluluskan</label>
+					<div class="col-lg-9">
+						<input maxlength="13" type="text" class="form-control" name="PeruntukanDiluluskan" id="PeruntukanDiluluskan" value="<%%VALUE(PeruntukanDiluluskan)%%>">
+					</div>
+				</div>
+
+				<!-- Field: Peruntukan Asal -->
+				<div class="form-group jpd_de-peruntukan_dipinda">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="peruntukan_dipinda">Peruntukan Asal <i class="glyphicon glyphicon-info-sign text-info" data-toggle="collapse" data-target="#peruntukan_dipinda-description"></i></label>
+					<div class="col-lg-9">
+						<span class="help-block bspacer-xs collapse" id="peruntukan_dipinda-description"><div class="alert alert-info bspacer-xs">JIKA TERDAPAT PINDAAN</div></span>
+						<input type="text" class="form-control" name="peruntukan_dipinda" id="peruntukan_dipinda" value="<%%VALUE(peruntukan_dipinda)%%>">
+					</div>
+				</div>
+
+				<!-- Field: Kos projek -->
+				<div class="form-group jpd_de-Kosprojek">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="Kosprojek">Kos projek</label>
+					<div class="col-lg-9">
+						<input maxlength="13" type="text" class="form-control" name="Kosprojek" id="Kosprojek" value="<%%VALUE(Kosprojek)%%>">
+					</div>
+				</div>
+
+				<!-- Field: KKSVO -->
+				<div class="form-group jpd_de-KKSVO">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="KKSVO">KKSVO</label>
+					<div class="col-lg-9">
+						<input maxlength="13" type="text" class="form-control" name="KKSVO" id="KKSVO" value="<%%VALUE(KKSVO)%%>">
+					</div>
+				</div>
+
+				<!-- Field: Perbelanjaan -->
+				<div class="form-group jpd_de-Perbelanjaan">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3">Perbelanjaan</label>
+					<div class="col-lg-9">
+						<div class="form-control-static" id="Perbelanjaan"><%%VALUE(Perbelanjaan)%%></div>
+					</div>
+				</div>
+
+				<!-- Field: penjimatan -->
+				<div class="form-group jpd_de-penjimatan">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3">penjimatan</label>
+					<div class="col-lg-9">
+						<div class="form-control-static" id="penjimatan"><%%VALUE(penjimatan)%%></div>
+					</div>
+				</div>
+
+				<!-- Field: Status -->
+				<div class="form-group jpd_de-Status">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="Status" data-parent_link="view_parent_modal">Status</label>
+					<div class="col-lg-9">
+						<div class="form-control-static" style="white-space: nowrap; overflow-x: hidden;"><%%COMBO(Status)%%><%%PLINK(Status)%%><%%ADDNEW(status_pelaksanaan)%%></div>
+					</div>
+				</div>
+
+				<!-- Field: Penyelia projek -->
+				<div class="form-group jpd_de-penyelia_projek">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="penyelia_projek" data-parent_link="view_parent_modal">Penyelia projek</label>
+					<div class="col-lg-9">
+						<div class="form-control-static" style="white-space: nowrap; overflow-x: hidden;"><%%COMBO(penyelia_projek)%%><%%PLINK(penyelia_projek)%%><%%ADDNEW(penyelia_projek)%%></div>
+					</div>
+				</div>
+
+				<!-- Field: Penerima Manfaat -->
+				<div class="form-group jpd_de-PenerimaManfaat">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="PenerimaManfaat">Penerima Manfaat</label>
+					<div class="col-lg-9">
+						<input maxlength="40" type="text" class="form-control" name="PenerimaManfaat" id="PenerimaManfaat" value="<%%VALUE(PenerimaManfaat)%%>">
+					</div>
+				</div>
+
+				<!-- Field: Catatan -->
+				<div class="form-group jpd_de-catatan">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3" for="catatan">Catatan</label>
+					<div class="col-lg-9">
+						<textarea class="form-control" name="catatan" id="catatan" rows=" 5"><%%VALUE(catatan)%%></textarea>
+					</div>
+				</div>
+
+				<!-- Field: Inden Kerja -->
+				<div class="form-group jpd_de-inden">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3">Inden Kerja <i class="glyphicon glyphicon-info-sign text-info" data-toggle="collapse" data-target="#inden-description"></i></label>
+					<div class="col-lg-9">
+						<span class="help-block bspacer-xs collapse" id="inden-description"><div class="alert alert-info bspacer-xs">Maximum file size allowed: 2000 KB.<br>Allowed file types: txt, doc, docx, docm, odt, pdf, rtf</div></span>
+						<div class="form-control-static well well-sm">
+							<div class="pull-left"><a id="inden-link" href="link.php?t=jpd_de&f=inden&i=<%%VALUE(ID)%%>" target="_blank" class="rspacer-lg"><i class="glyphicon glyphicon-file" title="<%%VALUE(inden)%%>" style="font-size: 4em;"></i></a></div>
+							<div class="pull-right well upload-toolbox">
+								<div class="hidden-md hidden-lg vspacer-lg"></div>
+								<%%UPLOADFILE(inden)%%>
+								<%%REMOVEFILE(inden)%%>
+								<div class="text-bold text-danger file-type-error hidden">
+									<%%TRANSLATION(invalid file type)%%>
+								</div>
+								<div class="text-bold text-danger file-size-error hidden">
+									<%%TRANSLATION(file too large)%%>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<script>jQuery(function() { var e_inden = '<%%VALUE(inden)%%>'; if(e_inden == '' || e_inden == '&nbsp;' || e_inden == 'blank.gif') jQuery('#inden-link').hide(); });</script>
+					</div>
+				</div>
+
+				<!-- Field: Baucer Bayaran -->
+				<div class="form-group jpd_de-Baucer">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3">Baucer Bayaran <i class="glyphicon glyphicon-info-sign text-info" data-toggle="collapse" data-target="#Baucer-description"></i></label>
+					<div class="col-lg-9">
+						<span class="help-block bspacer-xs collapse" id="Baucer-description"><div class="alert alert-info bspacer-xs">Maximum file size allowed: 2000 KB.<br>Allowed file types: txt, doc, docx, docm, odt, pdf, rtf</div></span>
+						<div class="form-control-static well well-sm">
+							<div class="pull-left"><a id="Baucer-link" href="link.php?t=jpd_de&f=Baucer&i=<%%VALUE(ID)%%>" target="_blank" class="rspacer-lg"><i class="glyphicon glyphicon-file" title="<%%VALUE(Baucer)%%>" style="font-size: 4em;"></i></a></div>
+							<div class="pull-right well upload-toolbox">
+								<div class="hidden-md hidden-lg vspacer-lg"></div>
+								<%%UPLOADFILE(Baucer)%%>
+								<%%REMOVEFILE(Baucer)%%>
+								<div class="text-bold text-danger file-type-error hidden">
+									<%%TRANSLATION(invalid file type)%%>
+								</div>
+								<div class="text-bold text-danger file-size-error hidden">
+									<%%TRANSLATION(file too large)%%>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<script>jQuery(function() { var e_Baucer = '<%%VALUE(Baucer)%%>'; if(e_Baucer == '' || e_Baucer == '&nbsp;' || e_Baucer == 'blank.gif') jQuery('#Baucer-link').hide(); });</script>
+					</div>
+				</div>
+
+				<!-- Field: Gambar  -->
+				<div class="form-group jpd_de-gambar2">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3">Gambar  <i class="glyphicon glyphicon-info-sign text-info" data-toggle="collapse" data-target="#gambar2-description"></i></label>
+					<div class="col-lg-9">
+						<span class="help-block bspacer-xs collapse" id="gambar2-description"><div class="alert alert-info bspacer-xs">Maximum file size allowed: 10000 KB.<br>Allowed file types: jpg, jpeg, gif, png</div></span>
+						<div class="form-control-static well well-sm">
+							<div class="pull-left"><a href="<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar2)%%>" data-lightbox="jpd_de_dv"><img src="thumbnail.php?i=<%%VALUE(gambar2)%%>&t=jpd_de&f=gambar2&v=dv" class="img-thumbnail" id="gambar2-image"></a></div>
+							<div class="pull-right well upload-toolbox">
+								<div class="hidden-md hidden-lg vspacer-lg"></div>
+								<%%UPLOADFILE(gambar2)%%>
+								<%%REMOVEFILE(gambar2)%%>
+								<div class="text-bold text-danger file-type-error hidden"><%%TRANSLATION(invalid file type)%%></div>
+								<div class="text-bold text-danger file-size-error hidden"><%%TRANSLATION(file too large)%%></div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<script>/* disable links to empty images */ $j(function() { var e_gambar2 = '<%%VALUE(gambar2)%%>'; if(e_gambar2 == '' || e_gambar2 == '&nbsp;' || e_gambar2 == 'blank.gif') { $j('#gambar2-link').hide(); $j('#gambar2-image').parents('a').attr('href', '').on('click', function(e) { e.preventDefault(); }); } });</script>
+					</div>
+				</div>
+
+				<!-- Field: Gambar   -->
+				<div class="form-group jpd_de-gambar3">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3">Gambar   <i class="glyphicon glyphicon-info-sign text-info" data-toggle="collapse" data-target="#gambar3-description"></i></label>
+					<div class="col-lg-9">
+						<span class="help-block bspacer-xs collapse" id="gambar3-description"><div class="alert alert-info bspacer-xs">Maximum file size allowed: 10000 KB.<br>Allowed file types: jpg, jpeg, gif, png</div></span>
+						<div class="form-control-static well well-sm">
+							<div class="pull-left"><a href="<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar3)%%>" data-lightbox="jpd_de_dv"><img src="thumbnail.php?i=<%%VALUE(gambar3)%%>&t=jpd_de&f=gambar3&v=dv" class="img-thumbnail" id="gambar3-image"></a></div>
+							<div class="pull-right well upload-toolbox">
+								<div class="hidden-md hidden-lg vspacer-lg"></div>
+								<%%UPLOADFILE(gambar3)%%>
+								<%%REMOVEFILE(gambar3)%%>
+								<div class="text-bold text-danger file-type-error hidden"><%%TRANSLATION(invalid file type)%%></div>
+								<div class="text-bold text-danger file-size-error hidden"><%%TRANSLATION(file too large)%%></div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<script>/* disable links to empty images */ $j(function() { var e_gambar3 = '<%%VALUE(gambar3)%%>'; if(e_gambar3 == '' || e_gambar3 == '&nbsp;' || e_gambar3 == 'blank.gif') { $j('#gambar3-link').hide(); $j('#gambar3-image').parents('a').attr('href', '').on('click', function(e) { e.preventDefault(); }); } });</script>
+					</div>
+				</div>
+
+				<!-- Field: Dikemaskini Oleh -->
+				<div class="form-group jpd_de-updated">
+					<hr class="hidden-md hidden-lg">
+					<label class="control-label col-lg-3">Dikemaskini Oleh</label>
+					<div class="col-lg-9">
+						<div class="form-control-static" id="updated"><%%VALUE(updated)%%></div>
+					</div>
+				</div>
+
+			</fieldset>
+		</div>
+
+		<!-- DV action buttons -->
+		<hr class="hidden-md hidden-lg">
+		<div class="col-md-4 col-lg-2" id="jpd_de_dv_action_buttons">
+			<div class="btn-toolbar">
+				<div class="btn-group-vertical btn-group-lg" style="width: 100%;">
+					<%%UPDATE_BUTTON%%>
+				</div><p></p>
+				<div class="btn-group-vertical btn-group-lg" style="width: 100%;">
+					<%%DESELECT_BUTTON%%>
+					<%%DVPRINT_BUTTON%%>
+					<%%DELETE_BUTTON%%>
+				</div><p></p>
+				<div class="btn-group-vertical btn-group-lg" style="width: 100%;">
+					<%%INSERT_BUTTON%%>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div><!-- /div class="panel-body" -->
+	<script>
+		$j(function() {
+			var add_new_mode = (!$j('input[name=SelectedID]').val());
+			var embedded_mode = ($j('input[name=Embedded]').val() == 1);
+
+			/* auto-close embedded page? */
+			var autoclose_mode = ($j('input[name=AutoClose]').val() == 1);
+			var record_added_ok = (location.search.split('record-added-ok=').length == 2);
+			var record_updated_ok = (location.search.split('record-updated-ok=').length == 2);
+			if((record_added_ok || record_updated_ok) && embedded_mode && autoclose_mode) {
+				setTimeout(AppGini.closeParentModal, 2000);
+			}
+
+
+			/* enable DV action buttons to float on scrolling down the form */
+			enable_dvab_floating();
+
+			$j('#jpd_de_dv_container-loading').addClass('hidden');
+			$j('#jpd_de_dv_container').removeClass('hidden');
+
+			$j('form').eq(0).change(function() {
+				if($j(this).data('already_changed')) return;
+				if($j('#deselect').length) $j('#deselect').removeClass('btn-default').addClass('btn-warning').get(0).lastChild.data = " <%%TRANSLATION(Cancel)%%>";
+				$j(this).data('already_changed', true);
+			});
+
+			$j('a[href="<%%BASE_UPLOAD_PATH%%>"]').click(function() { return false; });
+
+
+			if(true /* !embedded_mode */) {
+				/* add a horizontal spacer to [add new parent] buttons that don't have a spacered element before them */
+				$j('.add_new_parent').prev(':not(.hspacer-md)').next().addClass('hspacer-md');
+
+				$j('.add_new_parent').click(function() {
+					var pt = $j(this).attr('id').replace(/_add_new$/, '');
+					modal_window({
+						url: pt + '_view.php?addNew_x=1&Embedded=1',
+						close: function() {
+							var field_id = $j('#' + pt + '_add_new').prevAll('input:hidden').eq(0).attr('id');
+							$j('#' + field_id + '-container').select2('focus').select2('focus');
+
+							/* if a new parent was added, select it */
+							var new_id = localStorage.getItem(pt + '_last_added_id');
+							if(new_id === null) return;
+
+							localStorage.removeItem(pt + '_last_added_id');
+							AppGini.lookupText({
+								id: new_id,
+								table: 'jpd_de',
+								field: field_id,
+								callback: function(data) {
+									$j('#' + field_id + '-container').select2('data', data, true);
+								}
+							});
+						},
+						size: 'full',
+						title: $j(this).attr('title')
+					});
+				});
+			}
+
+			AppGini.hideViewParentLinks();
+
+			$j('form').on('click', '.view_parent', function() {
+				var pt = $j(this).attr('id').replace(/_view_parent$/, '');
+				if($j(this).prevAll('input:hidden').length) {
+					var parent_id = $j(this).prevAll('input:hidden').eq(0).val();
+				} else {
+					var parent_id = $j(this).prevAll().children('input:hidden').eq(0).val();
+				}
+
+				/* handle radio lookups */
+				if($j(this).prevAll('[type=radio]').length) {
+					parent_id = $j(this).prevAll('[type=radio]').eq(0).val();
+				}
+
+				if(parent_id != '{empty_value}' && parent_id != undefined && parent_id != '') {
+					var parent_link = $j(this).parents('.form-group').children('label').data('parent_link');
+					switch(parent_link) {
+						case 'view_parent_hidden':
+							break;
+						case 'view_parent_modal':
+							modal_window({
+								url: pt + '_view.php?Embedded=1&SelectedID=' + encodeURIComponent(parent_id),
+								close: function() {
+									var field_id = $j('#' + pt + '_view_parent').prevAll('input:hidden').eq(0).attr('id');
+									$j('#' + field_id + '-container').select2('focus').select2('focus');
+								},
+								size: 'full',
+								title: $j(this).attr('title')
+							});
+							break;
+						case 'view_parent_same_window':
+							window.location = pt + '_view.php?Embedded=' + (embedded_mode ? '1' : '') + '&SelectedID=' + encodeURIComponent(parent_id);
+							break;
+						case 'view_parent_new_window':
+							window.open(pt + '_view.php?SelectedID=' + encodeURIComponent(parent_id));
+							break;
+					}
+
+				}
+			});
+
+
+			/* load admin tools for admin user */
+			if(!add_new_mode) {
+				$j('body').append('<div id="admin-tools-appendix"></div>');
+				$j('#admin-tools-appendix').load(
+					'ajax_admin_tools.php?table=jpd_de&id=<%%URLVALUE(ID)%%>',
+					function(resp) {
+						if(!resp.length) return;
+						$j.ajax('ajax_admin_tools.php?action=get_admin_tools_js&table=jpd_de&id=<%%URLVALUE(ID)%%>');
+					}
+				);
+			}
+
+			/* warn user if 'add new' clicked while unsaved changes exist */
+			$j('#addNew').click(function() {
+				if($j('#deselect.btn-warning').length) {
+					return confirm('<%%TRANSLATION(discard changes confirm)%%>');
+				}
+			});
+
+		});
+	</script>

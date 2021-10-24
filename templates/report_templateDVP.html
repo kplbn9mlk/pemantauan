@@ -1,0 +1,85 @@
+<!-- Edit this file to change the layout of the detail view print preview page -->
+
+
+<div class="panel-heading"><h3 class="panel-title">
+	<strong><%%DETAIL_VIEW_TITLE%%></strong>
+	<div class="hidden-print pull-right">
+		<div class="btn-group">
+			<button type="button" id="print" onclick="window.print();" title="<%%TRANSLATION(Print)%%>" class="btn btn-primary"><i class="glyphicon glyphicon-print"></i> <%%TRANSLATION(Print)%%></button>
+			<button type="submit" id="back" title="<%%TRANSLATION(Cancel Printing)%%>" class="btn btn-default"><i class="glyphicon glyphicon-remove-circle"></i> <%%TRANSLATION(Cancel Printing)%%></button>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</h3></div>
+
+<div class="panel-body">
+	<fieldset class="form-horizontal">
+		<!-- Field: ID -->
+		<div class="form-group report-id" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">ID</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(id)%%></div>
+			</div>
+		</div>
+		<!-- Field: Program -->
+		<div class="form-group report-projek" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Program</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(projek)%%></div>
+			</div>
+		</div>
+		<!-- Field: Peruntukan (RM) -->
+		<div class="form-group report-peruntukan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Peruntukan (RM)</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(peruntukan)%%></div>
+			</div>
+		</div>
+		<!-- Field: Bil Projek -->
+		<div class="form-group report-jumlahprojek" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Bil Projek</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(jumlahprojek)%%></div>
+			</div>
+		</div>
+		<!-- Field: Belum Mula -->
+		<div class="form-group report-BM" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Belum Mula</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(BM)%%></div>
+			</div>
+		</div>
+		<!-- Field: Perolehan -->
+		<div class="form-group report-perolehan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Perolehan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(perolehan)%%></div>
+			</div>
+		</div>
+		<!-- Field: Dalam Perlaksanaan -->
+		<div class="form-group report-Dp" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Dalam Perlaksanaan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(Dp)%%></div>
+			</div>
+		</div>
+		<!-- Field: Siap -->
+		<div class="form-group report-Sp" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Siap</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(Sp)%%></div>
+			</div>
+		</div>
+	</fieldset>
+</div>
+<script>
+	$j(function() {
+		// render read-only checkboxes in DVP
+		$j('form input[type=checkbox]:not(.hidden):checked')
+			.addClass('hidden')
+			.after('<i class="glyphicon glyphicon-check"></i>');
+		$j('form input[type=checkbox]:not(.hidden):not(:checked)')
+			.addClass('hidden')
+			.after('<i class="glyphicon glyphicon-unchecked"></i>')
+	})
+</script>

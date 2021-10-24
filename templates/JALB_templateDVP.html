@@ -1,0 +1,241 @@
+<!-- Edit this file to change the layout of the detail view print preview page -->
+
+
+<div class="panel-heading"><h3 class="panel-title">
+	<strong><%%DETAIL_VIEW_TITLE%%></strong>
+	<div class="hidden-print pull-right">
+		<div class="btn-group">
+			<button type="button" id="print" onclick="window.print();" title="<%%TRANSLATION(Print)%%>" class="btn btn-primary"><i class="glyphicon glyphicon-print"></i> <%%TRANSLATION(Print)%%></button>
+			<button type="submit" id="back" title="<%%TRANSLATION(Cancel Printing)%%>" class="btn btn-default"><i class="glyphicon glyphicon-remove-circle"></i> <%%TRANSLATION(Cancel Printing)%%></button>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</h3></div>
+
+<div class="panel-body">
+	<fieldset class="form-horizontal">
+		<!-- Field: ID -->
+		<div class="form-group JALB-id" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">ID</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(id)%%></div>
+			</div>
+		</div>
+		<!-- Field: Tahun laksana -->
+		<div class="form-group JALB-tahun_laksana" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Tahun laksana</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="tahun_laksana<%%RND1%%>"><%%COMBOTEXT(tahun_laksana)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Nama Projek -->
+		<div class="form-group JALB-NamaProjek" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Nama Projek</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(NamaProjek)%%></div>
+			</div>
+		</div>
+		<!-- Field: Negeri -->
+		<div class="form-group JALB-negeri" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Negeri</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="negeri<%%RND1%%>"><%%COMBOTEXT(negeri)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Daerah -->
+		<div class="form-group JALB-Daerah" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Daerah</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="Daerah<%%RND1%%>"><%%COMBOTEXT(Daerah)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Parlimen -->
+		<div class="form-group JALB-Parlimen" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Parlimen</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="Parlimen<%%RND1%%>"><%%COMBOTEXT(Parlimen)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: DUN -->
+		<div class="form-group JALB-DUN" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">DUN</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="DUN<%%RND1%%>"><%%COMBOTEXT(DUN)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Agensi Pelaksana -->
+		<div class="form-group JALB-AgensiPelaksana" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Agensi Pelaksana</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="AgensiPelaksana<%%RND1%%>"><%%COMBOTEXT(AgensiPelaksana)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Nama Kontraktor -->
+		<div class="form-group JALB-NamaKontraktor" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Nama Kontraktor</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(NamaKontraktor)%%></div>
+			</div>
+		</div>
+		<!-- Field: Tarikh SST -->
+		<div class="form-group JALB-TarikhSST" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Tarikh SST</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(TarikhSST)%%></div>
+			</div>
+		</div>
+		<!-- Field: Tarikh Siap Sepenuhnya -->
+		<div class="form-group JALB-TarikhSiapSepenuhnya" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Tarikh Siap Sepenuhnya</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(TarikhSiapSepenuhnya)%%></div>
+			</div>
+		</div>
+		<!-- Field: Spesifikasi -->
+		<div class="form-group JALB-speck" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Spesifikasi</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(speck)%%></div>
+			</div>
+		</div>
+		<!-- Field: Panjang Jalan (KM) -->
+		<div class="form-group JALB-Panjang" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Panjang Jalan (KM)</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(Panjang)%%></div>
+			</div>
+		</div>
+		<!-- Field: Gambar -->
+		<div class="form-group JALB-gambar1" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Gambar</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><script>
+				var gambar1Src1<%%RND1%%>='<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar1)%%>';
+				var gambar1Src2<%%RND1%%>='thumbnail.php?t=JALB&f=gambar1&i=<%%VALUE(gambar1)%%>&v=dv'
+			</script>
+			<a href="#" onclick="$('gambar1Img<%%RND1%%>').src=($('gambar1Img<%%RND1%%>').src.search(/thumbnail\.php/) != -1 && gambar1Src1<%%RND1%%> != '<%%BASE_UPLOAD_PATH%%>' ? gambar1Src1<%%RND1%%> : gambar1Src2<%%RND1%%>); return false;"><img id="gambar1Img<%%RND1%%>" src="thumbnail.php?t=JALB&f=gambar1&i=<%%VALUE(gambar1)%%>&v=dv" class="img-thumbnail"></a></div>
+			</div>
+		</div>
+		<!-- Field: Gambar  -->
+		<div class="form-group JALB-gambar2" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Gambar </label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><script>
+				var gambar2Src1<%%RND1%%>='<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar2)%%>';
+				var gambar2Src2<%%RND1%%>='thumbnail.php?t=JALB&f=gambar2&i=<%%VALUE(gambar2)%%>&v=dv'
+			</script>
+			<a href="#" onclick="$('gambar2Img<%%RND1%%>').src=($('gambar2Img<%%RND1%%>').src.search(/thumbnail\.php/) != -1 && gambar2Src1<%%RND1%%> != '<%%BASE_UPLOAD_PATH%%>' ? gambar2Src1<%%RND1%%> : gambar2Src2<%%RND1%%>); return false;"><img id="gambar2Img<%%RND1%%>" src="thumbnail.php?t=JALB&f=gambar2&i=<%%VALUE(gambar2)%%>&v=dv" class="img-thumbnail"></a></div>
+			</div>
+		</div>
+		<!-- Field: Latitud -->
+		<div class="form-group JALB-Latitud" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Latitud</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(Latitud)%%></div>
+			</div>
+		</div>
+		<!-- Field: Peta -->
+		<div class="form-group JALB-Peta" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Peta</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><img src="<%%GOOGLEMAPTHUMB(Peta)%%>" style="max-width: 800px;  max-height: 300px; "></div>
+			</div>
+		</div>
+		<!-- Field: Siling Projek -->
+		<div class="form-group JALB-kos_siling" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Siling Projek</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(kos_siling)%%></div>
+			</div>
+		</div>
+		<!-- Field: Kos projek -->
+		<div class="form-group JALB-Kosprojek" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Kos projek</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(Kosprojek)%%></div>
+			</div>
+		</div>
+		<!-- Field: Status -->
+		<div class="form-group JALB-Status" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Status</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="Status<%%RND1%%>"><%%COMBOTEXT(Status)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: % Progress jadual -->
+		<div class="form-group JALB-progress_jadual" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">% Progress jadual</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(progress_jadual)%%></div>
+			</div>
+		</div>
+		<!-- Field: % Progress sebenar -->
+		<div class="form-group JALB-progress_sebenar" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">% Progress sebenar</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(progress_sebenar)%%></div>
+			</div>
+		</div>
+		<!-- Field: Dahulu/Lewat Jadual -->
+		<div class="form-group JALB-jadual" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Dahulu/Lewat Jadual</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(jadual)%%></div>
+			</div>
+		</div>
+		<!-- Field: Sumber Permohonan -->
+		<div class="form-group JALB-sumber_permohonan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Sumber Permohonan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(sumber_permohonan)%%></div>
+			</div>
+		</div>
+		<!-- Field: Penerima Manfaat -->
+		<div class="form-group JALB-PenerimaManfaat" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Penerima Manfaat</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(PenerimaManfaat)%%></div>
+			</div>
+		</div>
+		<!-- Field: Gambar   -->
+		<div class="form-group JALB-gambar3" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Gambar  </label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><script>
+				var gambar3Src1<%%RND1%%>='<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar3)%%>';
+				var gambar3Src2<%%RND1%%>='thumbnail.php?t=JALB&f=gambar3&i=<%%VALUE(gambar3)%%>&v=dv'
+			</script>
+			<a href="#" onclick="$('gambar3Img<%%RND1%%>').src=($('gambar3Img<%%RND1%%>').src.search(/thumbnail\.php/) != -1 && gambar3Src1<%%RND1%%> != '<%%BASE_UPLOAD_PATH%%>' ? gambar3Src1<%%RND1%%> : gambar3Src2<%%RND1%%>); return false;"><img id="gambar3Img<%%RND1%%>" src="thumbnail.php?t=JALB&f=gambar3&i=<%%VALUE(gambar3)%%>&v=dv" class="img-thumbnail"></a></div>
+			</div>
+		</div>
+		<!-- Field: Gambar   -->
+		<div class="form-group JALB-gambar4" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Gambar  </label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><script>
+				var gambar4Src1<%%RND1%%>='<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar4)%%>';
+				var gambar4Src2<%%RND1%%>='thumbnail.php?t=JALB&f=gambar4&i=<%%VALUE(gambar4)%%>&v=dv'
+			</script>
+			<a href="#" onclick="$('gambar4Img<%%RND1%%>').src=($('gambar4Img<%%RND1%%>').src.search(/thumbnail\.php/) != -1 && gambar4Src1<%%RND1%%> != '<%%BASE_UPLOAD_PATH%%>' ? gambar4Src1<%%RND1%%> : gambar4Src2<%%RND1%%>); return false;"><img id="gambar4Img<%%RND1%%>" src="thumbnail.php?t=JALB&f=gambar4&i=<%%VALUE(gambar4)%%>&v=dv" class="img-thumbnail"></a></div>
+			</div>
+		</div>
+		<!-- Field: Dikemaskini oleh -->
+		<div class="form-group JALB-updated" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Dikemaskini oleh</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(updated)%%></div>
+			</div>
+		</div>
+	</fieldset>
+</div>
+<script>
+	$j(function() {
+		// render read-only checkboxes in DVP
+		$j('form input[type=checkbox]:not(.hidden):checked')
+			.addClass('hidden')
+			.after('<i class="glyphicon glyphicon-check"></i>');
+		$j('form input[type=checkbox]:not(.hidden):not(:checked)')
+			.addClass('hidden')
+			.after('<i class="glyphicon glyphicon-unchecked"></i>')
+	})
+</script>

@@ -1,0 +1,238 @@
+<!-- Edit this file to change the layout of the detail view print preview page -->
+
+
+<div class="panel-heading"><h3 class="panel-title">
+	<strong><%%DETAIL_VIEW_TITLE%%></strong>
+	<div class="hidden-print pull-right">
+		<div class="btn-group">
+			<button type="button" id="print" onclick="window.print();" title="<%%TRANSLATION(Print)%%>" class="btn btn-primary"><i class="glyphicon glyphicon-print"></i> <%%TRANSLATION(Print)%%></button>
+			<button type="submit" id="back" title="<%%TRANSLATION(Cancel Printing)%%>" class="btn btn-default"><i class="glyphicon glyphicon-remove-circle"></i> <%%TRANSLATION(Cancel Printing)%%></button>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</h3></div>
+
+<div class="panel-body">
+	<fieldset class="form-horizontal">
+		<!-- Field: ID -->
+		<div class="form-group pprt-ID" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">ID</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(ID)%%></div>
+			</div>
+		</div>
+		<!-- Field: Tahun laksana -->
+		<div class="form-group pprt-tahun_laksana" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Tahun laksana</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="tahun_laksana<%%RND1%%>"><%%COMBOTEXT(tahun_laksana)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Kelulusan -->
+		<div class="form-group pprt-Kelulusan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Kelulusan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="Kelulusan<%%RND1%%>"><%%COMBOTEXT(Kelulusan)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Nama Pemohon -->
+		<div class="form-group pprt-Nama" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Nama Pemohon</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(Nama)%%></div>
+			</div>
+		</div>
+		<!-- Field: No Kad Pengenalan -->
+		<div class="form-group pprt-IC" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">No Kad Pengenalan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(IC)%%></div>
+			</div>
+		</div>
+		<!-- Field: Alamat -->
+		<div class="form-group pprt-alamat" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Alamat</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(alamat)%%></div>
+			</div>
+		</div>
+		<!-- Field: Status E-Kasih -->
+		<div class="form-group pprt-ekasih" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Status E-Kasih</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="ekasih<%%RND1%%>"><%%COMBOTEXT(ekasih)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Negeri -->
+		<div class="form-group pprt-negeri" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Negeri</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="negeri<%%RND1%%>"><%%COMBOTEXT(negeri)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Daerah -->
+		<div class="form-group pprt-Daerah" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Daerah</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="Daerah<%%RND1%%>"><%%COMBOTEXT(Daerah)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Parlimen -->
+		<div class="form-group pprt-Parlimen" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Parlimen</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="Parlimen<%%RND1%%>"><%%COMBOTEXT(Parlimen)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: DUN -->
+		<div class="form-group pprt-DUN" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">DUN</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="DUN<%%RND1%%>"><%%COMBOTEXT(DUN)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Agensi Pelaksana -->
+		<div class="form-group pprt-AgensiPelaksana" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Agensi Pelaksana</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="AgensiPelaksana<%%RND1%%>"><%%COMBOTEXT(AgensiPelaksana)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Nama Kontraktor -->
+		<div class="form-group pprt-NamaKontraktor" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Nama Kontraktor</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(NamaKontraktor)%%></div>
+			</div>
+		</div>
+		<!-- Field: Tarikh SST -->
+		<div class="form-group pprt-TarikhTawaranSSTLantikan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Tarikh SST</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(TarikhTawaranSSTLantikan)%%></div>
+			</div>
+		</div>
+		<!-- Field: Tarikh Siap Projek -->
+		<div class="form-group pprt-TarikhSiapProjek" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Tarikh Siap Projek</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(TarikhSiapProjek)%%></div>
+			</div>
+		</div>
+		<!-- Field: Jenis Binaan -->
+		<div class="form-group pprt-jenis_binaan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Jenis Binaan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(jenis_binaan)%%></div>
+			</div>
+		</div>
+		<!-- Field: Jenis PPRT -->
+		<div class="form-group pprt-skop" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Jenis PPRT</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(skop)%%></div>
+			</div>
+		</div>
+		<!-- Field: Peta -->
+		<div class="form-group pprt-Peta" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Peta</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><img src="<%%GOOGLEMAPTHUMB(Peta)%%>" style="max-width: 800px;  max-height: 300px; "></div>
+			</div>
+		</div>
+		<!-- Field: Peruntukan  -->
+		<div class="form-group pprt-PeruntukanDiluluskan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Peruntukan </label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(PeruntukanDiluluskan)%%></div>
+			</div>
+		</div>
+		<!-- Field: Kos projek -->
+		<div class="form-group pprt-Kosprojek" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Kos projek</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(Kosprojek)%%></div>
+			</div>
+		</div>
+		<!-- Field: Perbelanjaan -->
+		<div class="form-group pprt-Perbelanjaan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Perbelanjaan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(Perbelanjaan)%%></div>
+			</div>
+		</div>
+		<!-- Field: penjimatan -->
+		<div class="form-group pprt-penjimatan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">penjimatan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(penjimatan)%%></div>
+			</div>
+		</div>
+		<!-- Field: Peratus Siap Projek -->
+		<div class="form-group pprt-Peratus_siap" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Peratus Siap Projek</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(Peratus_siap)%%></div>
+			</div>
+		</div>
+		<!-- Field: Status -->
+		<div class="form-group pprt-Status" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Status</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="Status<%%RND1%%>"><%%COMBOTEXT(Status)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Sumber Permohonan -->
+		<div class="form-group pprt-sumber_permohonan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Sumber Permohonan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(sumber_permohonan)%%></div>
+			</div>
+		</div>
+		<!-- Field: Catatan -->
+		<div class="form-group pprt-catatan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Catatan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(catatan)%%></div>
+			</div>
+		</div>
+		<!-- Field: Gambar projek -->
+		<div class="form-group pprt-gambar1" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Gambar projek</label>
+			<div class="col-xs-9">
+				<div class="form-control-static">
+<img src="<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar1)%%>" class="img-responsive img-thumbnail">
+</div>
+			</div>
+		</div>
+		<!-- Field: Gambar projek -->
+		<div class="form-group pprt-gambar2" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Gambar projek</label>
+			<div class="col-xs-9">
+				<div class="form-control-static">
+<img src="<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar2)%%>" class="img-responsive img-thumbnail">
+</div>
+			</div>
+		</div>
+		<!-- Field: Gambar projek -->
+		<div class="form-group pprt-gambar3" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Gambar projek</label>
+			<div class="col-xs-9">
+				<div class="form-control-static">
+<img src="<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar3)%%>" class="img-responsive img-thumbnail">
+</div>
+			</div>
+		</div>
+	</fieldset>
+</div>
+<script>
+	$j(function() {
+		// render read-only checkboxes in DVP
+		$j('form input[type=checkbox]:not(.hidden):checked')
+			.addClass('hidden')
+			.after('<i class="glyphicon glyphicon-check"></i>');
+		$j('form input[type=checkbox]:not(.hidden):not(:checked)')
+			.addClass('hidden')
+			.after('<i class="glyphicon glyphicon-unchecked"></i>')
+	})
+</script>

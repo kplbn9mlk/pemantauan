@@ -1,0 +1,38 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the pams_DE_REKOD_init() hook (in hooks/pams_DE_REKOD.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="pams_DE_REKOD-tahun_laksana-<%%VALUE(id)%%>" class="pams_DE_REKOD-tahun_laksana"><%%VALUE(tahun_laksana)%%></td>
+		<td id="pams_DE_REKOD-Kelulusan-<%%VALUE(id)%%>" class="pams_DE_REKOD-Kelulusan"><%%VALUE(Kelulusan)%%></td>
+		<td id="pams_DE_REKOD-NamaProjek-<%%VALUE(id)%%>" class="pams_DE_REKOD-NamaProjek"><%%VALUE(NamaProjek)%%></td>
+		<td id="pams_DE_REKOD-negeri-<%%VALUE(id)%%>" class="pams_DE_REKOD-negeri"><%%VALUE(negeri)%%></td>
+		<td id="pams_DE_REKOD-Daerah-<%%VALUE(id)%%>" class="pams_DE_REKOD-Daerah"><%%VALUE(Daerah)%%></td>
+		<td id="pams_DE_REKOD-Parlimen-<%%VALUE(id)%%>" class="pams_DE_REKOD-Parlimen"><%%VALUE(Parlimen)%%></td>
+		<td id="pams_DE_REKOD-DUN-<%%VALUE(id)%%>" class="pams_DE_REKOD-DUN"><%%VALUE(DUN)%%></td>
+		<td id="pams_DE_REKOD-AgensiPelaksana-<%%VALUE(id)%%>" class="pams_DE_REKOD-AgensiPelaksana"><%%VALUE(AgensiPelaksana)%%></td>
+		<td id="pams_DE_REKOD-agensi_pembayar-<%%VALUE(id)%%>" class="pams_DE_REKOD-agensi_pembayar"><%%VALUE(agensi_pembayar)%%></td>
+		<td id="pams_DE_REKOD-penyelia_projek-<%%VALUE(id)%%>" class="pams_DE_REKOD-penyelia_projek"><%%VALUE(penyelia_projek)%%></td>
+		<td id="pams_DE_REKOD-NamaKontraktor-<%%VALUE(id)%%>" class="pams_DE_REKOD-NamaKontraktor"><%%VALUE(NamaKontraktor)%%></td>
+		<td id="pams_DE_REKOD-TarikhSST-<%%VALUE(id)%%>" class="pams_DE_REKOD-TarikhSST"><%%VALUE(TarikhSST)%%></td>
+		<td id="pams_DE_REKOD-TarikhSiapProjek-<%%VALUE(id)%%>" class="pams_DE_REKOD-TarikhSiapProjek"><%%VALUE(TarikhSiapProjek)%%></td>
+		<td id="pams_DE_REKOD-TarikhSiapSebenar-<%%VALUE(id)%%>" class="pams_DE_REKOD-TarikhSiapSebenar"><%%VALUE(TarikhSiapSebenar)%%></td>
+		<td id="pams_DE_REKOD-PanjangJalanM-<%%VALUE(id)%%>" class="pams_DE_REKOD-PanjangJalanM"><%%VALUE(PanjangJalanM)%%></td>
+		<td id="pams_DE_REKOD-LebarM-<%%VALUE(id)%%>" class="pams_DE_REKOD-LebarM"><%%VALUE(LebarM)%%></td>
+		<td id="pams_DE_REKOD-Latitud-<%%VALUE(id)%%>" class="pams_DE_REKOD-Latitud"><%%VALUE(Latitud)%%></td>
+		<td id="pams_DE_REKOD-Longitud-<%%VALUE(id)%%>" class="pams_DE_REKOD-Longitud"><%%VALUE(Longitud)%%></td>
+		<td id="pams_DE_REKOD-PeruntukanDiluluskan-<%%VALUE(id)%%>" class="pams_DE_REKOD-PeruntukanDiluluskan text-right"><%%VALUE(PeruntukanDiluluskan)%%></td>
+		<td id="pams_DE_REKOD-peruntukan_dipinda-<%%VALUE(id)%%>" class="pams_DE_REKOD-peruntukan_dipinda text-right"><%%VALUE(peruntukan_dipinda)%%></td>
+		<td id="pams_DE_REKOD-Kosprojek-<%%VALUE(id)%%>" class="pams_DE_REKOD-Kosprojek text-right"><%%VALUE(Kosprojek)%%></td>
+		<td id="pams_DE_REKOD-KKSVO-<%%VALUE(id)%%>" class="pams_DE_REKOD-KKSVO text-right"><%%VALUE(KKSVO)%%></td>
+		<td id="pams_DE_REKOD-Perbelanjaan-<%%VALUE(id)%%>" class="pams_DE_REKOD-Perbelanjaan text-right"><%%VALUE(Perbelanjaan)%%></td>
+		<td id="pams_DE_REKOD-Penjimatan-<%%VALUE(id)%%>" class="pams_DE_REKOD-Penjimatan text-right"><%%VALUE(Penjimatan)%%></td>
+		<td id="pams_DE_REKOD-Status-<%%VALUE(id)%%>" class="pams_DE_REKOD-Status"><%%VALUE(Status)%%></td>
+		<td id="pams_DE_REKOD-PenerimaManfaat-<%%VALUE(id)%%>" class="pams_DE_REKOD-PenerimaManfaat"><%%VALUE(PenerimaManfaat)%%></td>
+		<td id="pams_DE_REKOD-sumber_permohonan-<%%VALUE(id)%%>" class="pams_DE_REKOD-sumber_permohonan"><%%VALUE(sumber_permohonan)%%></td>
+		<td id="pams_DE_REKOD-catatan-<%%VALUE(id)%%>" class="pams_DE_REKOD-catatan"><%%VALUE(catatan)%%></td>
+		<td id="pams_DE_REKOD-gambar_projek-<%%VALUE(id)%%>" class="pams_DE_REKOD-gambar_projek"><a href="<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar_projek)%%>" data-lightbox="pams_DE_REKOD-gambar_projek"><img src="thumbnail.php?i=<%%VALUE(gambar_projek)%%>&t=pams_DE_REKOD&f=gambar_projek&v=tv" class="img-thumbnail"></a></td>
+		<td id="pams_DE_REKOD-gambar_projek_1-<%%VALUE(id)%%>" class="pams_DE_REKOD-gambar_projek_1"><a href="<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar_projek_1)%%>" data-lightbox="pams_DE_REKOD-gambar_projek_1"><img src="thumbnail.php?i=<%%VALUE(gambar_projek_1)%%>&t=pams_DE_REKOD&f=gambar_projek_1&v=tv" class="img-thumbnail"></a></td>
+		<td id="pams_DE_REKOD-gambar_projek_2-<%%VALUE(id)%%>" class="pams_DE_REKOD-gambar_projek_2"><a href="<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar_projek_2)%%>" data-lightbox="pams_DE_REKOD-gambar_projek_2"><img src="thumbnail.php?i=<%%VALUE(gambar_projek_2)%%>&t=pams_DE_REKOD&f=gambar_projek_2&v=tv" class="img-thumbnail"></a></td>

@@ -1,0 +1,19 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the ljk_init() hook (in hooks/ljk.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="ljk-id-<%%VALUE(id)%%>" class="ljk-id text-right"><%%SELECT%%><%%VALUE(id)%%><%%ENDSELECT%%></td>
+		<td id="ljk-negeri-<%%VALUE(id)%%>" class="ljk-negeri"><%%SELECT%%><%%VALUE(negeri)%%><%%ENDSELECT%%></td>
+		<td id="ljk-daerah-<%%VALUE(id)%%>" class="ljk-daerah"><%%SELECT%%><%%VALUE(daerah)%%><%%ENDSELECT%%></td>
+		<td id="ljk-dun-<%%VALUE(id)%%>" class="ljk-dun"><%%SELECT%%><%%VALUE(dun)%%><%%ENDSELECT%%></td>
+		<td id="ljk-parlimen-<%%VALUE(id)%%>" class="ljk-parlimen"><%%SELECT%%><%%VALUE(parlimen)%%><%%ENDSELECT%%></td>
+		<td id="ljk-kampung-<%%VALUE(id)%%>" class="ljk-kampung"><%%SELECT%%><%%VALUE(kampung)%%><%%ENDSELECT%%></td>
+		<td id="ljk-no_tiang-<%%VALUE(id)%%>" class="ljk-no_tiang"><%%SELECT%%><%%VALUE(no_tiang)%%><%%ENDSELECT%%></td>
+		<td id="ljk-jenis_lampu-<%%VALUE(id)%%>" class="ljk-jenis_lampu"><%%SELECT%%><%%VALUE(jenis_lampu)%%><%%ENDSELECT%%></td>
+		<td id="ljk-status_pemasangan-<%%VALUE(id)%%>" class="ljk-status_pemasangan"><%%SELECT%%><%%VALUE(status_pemasangan)%%><%%ENDSELECT%%></td>
+		<td id="ljk-audit-<%%VALUE(id)%%>" class="ljk-audit"><%%SELECT%%><%%VALUE(audit)%%><%%ENDSELECT%%></td>
+		<td id="ljk-catatan-<%%VALUE(id)%%>" class="ljk-catatan"><%%SELECT%%><%%VALUE(catatan)%%><%%ENDSELECT%%></td>
+		<td id="ljk-gambar-<%%VALUE(id)%%>" class="ljk-gambar"><%%SELECT%%><%%VALUE(gambar)%%><%%ENDSELECT%%></td>

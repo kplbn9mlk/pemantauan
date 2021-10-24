@@ -1,0 +1,79 @@
+		<td colspan="23" class="row">
+			<div class="col-md-6">
+				<dl class="dl-horizontal">
+					<dt class="pemohon_pprt-ID-caption field-caption-tv">ID</dt>
+					<dd id="pemohon_pprt-ID-<%%VALUE(ID)%%>" class="pemohon_pprt-ID"><%%SELECT%%><%%VALUE(ID)%%><%%ENDSELECT%%></dd>
+
+					<dt class="pemohon_pprt-tahun-caption field-caption-tv">Tahun</dt>
+					<dd id="pemohon_pprt-tahun-<%%VALUE(ID)%%>" class="pemohon_pprt-tahun"><%%SELECT%%><%%VALUE(tahun)%%><%%ENDSELECT%%></dd>
+
+					<dt class="pemohon_pprt-gambar_projek-caption field-caption-tv">Gambar projek</dt>
+					<dd id="pemohon_pprt-gambar_projek-<%%VALUE(ID)%%>" class="pemohon_pprt-gambar_projek"><a href="<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar_projek)%%>" data-lightbox="pemohon_pprt-gambar_projek"><img src="thumbnail.php?i=<%%VALUE(gambar_projek)%%>&t=pemohon_pprt&f=gambar_projek&v=tv" class="img-thumbnail"></a></dd>
+
+					<dt class="pemohon_pprt-gambar2-caption field-caption-tv">Gambar2</dt>
+					<dd id="pemohon_pprt-gambar2-<%%VALUE(ID)%%>" class="pemohon_pprt-gambar2"><a href="<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar2)%%>" data-lightbox="pemohon_pprt-gambar2"><img src="thumbnail.php?i=<%%VALUE(gambar2)%%>&t=pemohon_pprt&f=gambar2&v=tv" class="img-thumbnail"></a></dd>
+
+					<dt class="pemohon_pprt-gambar3-caption field-caption-tv">Gambar3</dt>
+					<dd id="pemohon_pprt-gambar3-<%%VALUE(ID)%%>" class="pemohon_pprt-gambar3"><a href="<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar3)%%>" data-lightbox="pemohon_pprt-gambar3"><img src="thumbnail.php?i=<%%VALUE(gambar3)%%>&t=pemohon_pprt&f=gambar3&v=tv" class="img-thumbnail"></a></dd>
+
+					<dt class="pemohon_pprt-Nama_pemohon-caption field-caption-tv">Nama Pemohon</dt>
+					<dd id="pemohon_pprt-Nama_pemohon-<%%VALUE(ID)%%>" class="pemohon_pprt-Nama_pemohon"><%%SELECT%%><%%VALUE(Nama_pemohon)%%><%%ENDSELECT%%></dd>
+
+					<dt class="pemohon_pprt-sumber_mohon-caption field-caption-tv">Sumber mohon</dt>
+					<dd id="pemohon_pprt-sumber_mohon-<%%VALUE(ID)%%>" class="pemohon_pprt-sumber_mohon"><%%SELECT%%><%%VALUE(sumber_mohon)%%><%%ENDSELECT%%></dd>
+
+					<dt class="pemohon_pprt-status_tanah-caption field-caption-tv">Status tanah</dt>
+					<dd id="pemohon_pprt-status_tanah-<%%VALUE(ID)%%>" class="pemohon_pprt-status_tanah"><%%SELECT%%><%%VALUE(status_tanah)%%><%%ENDSELECT%%></dd>
+
+					<dt class="pemohon_pprt-negeri-caption field-caption-tv">NEGERI</dt>
+					<dd id="pemohon_pprt-negeri-<%%VALUE(ID)%%>" class="pemohon_pprt-negeri"><%%SELECT%%><%%VALUE(negeri)%%><%%ENDSELECT%%></dd>
+
+					<dt class="pemohon_pprt-Daerah-caption field-caption-tv">Daerah</dt>
+					<dd id="pemohon_pprt-Daerah-<%%VALUE(ID)%%>" class="pemohon_pprt-Daerah"><%%SELECT%%><%%VALUE(Daerah)%%><%%ENDSELECT%%></dd>
+
+					<dt class="pemohon_pprt-Parlimen-caption field-caption-tv">Parlimen</dt>
+					<dd id="pemohon_pprt-Parlimen-<%%VALUE(ID)%%>" class="pemohon_pprt-Parlimen"><%%SELECT%%><%%VALUE(Parlimen)%%><%%ENDSELECT%%></dd>
+
+					<dt class="pemohon_pprt-DUN-caption field-caption-tv">DUN</dt>
+					<dd id="pemohon_pprt-DUN-<%%VALUE(ID)%%>" class="pemohon_pprt-DUN"><%%SELECT%%><%%VALUE(DUN)%%><%%ENDSELECT%%></dd>
+
+				</dl>
+			</div>
+			<div class="col-md-6">
+				<dl class="dl-horizontal">
+					<dt class="pemohon_pprt-skop-caption field-caption-tv">Panjang Jalan (M)</dt>
+					<dd id="pemohon_pprt-skop-<%%VALUE(ID)%%>" class="pemohon_pprt-skop"><%%SELECT%%><%%VALUE(skop)%%><%%ENDSELECT%%></dd>
+
+					<dt class="pemohon_pprt-Latitud-caption field-caption-tv">Latitud</dt>
+					<dd id="pemohon_pprt-Latitud-<%%VALUE(ID)%%>" class="pemohon_pprt-Latitud"><%%SELECT%%><%%VALUE(Latitud)%%><%%ENDSELECT%%></dd>
+
+					<dt class="pemohon_pprt-Longitud-caption field-caption-tv">Peta</dt>
+					<dd id="pemohon_pprt-Longitud-<%%VALUE(ID)%%>" class="pemohon_pprt-Longitud"><%%SELECT%%><img src="<%%GOOGLEMAPTHUMB(Longitud)%%>" style="max-width: 50px; max-height: 50px; " ><%%ENDSELECT%%></dd>
+
+					<dt class="pemohon_pprt-anggaran_kos-caption field-caption-tv">Kos projek</dt>
+					<dd id="pemohon_pprt-anggaran_kos-<%%VALUE(ID)%%>" class="pemohon_pprt-anggaran_kos"><%%SELECT%%><%%VALUE(anggaran_kos)%%><%%ENDSELECT%%></dd>
+
+					<dt class="pemohon_pprt-justifikasi-caption field-caption-tv">Justifikasi</dt>
+					<dd id="pemohon_pprt-justifikasi-<%%VALUE(ID)%%>" class="pemohon_pprt-justifikasi"><%%SELECT%%><%%VALUE(justifikasi)%%><%%ENDSELECT%%></dd>
+
+					<dt class="pemohon_pprt-PenerimaManfaat-caption field-caption-tv">Penerima Manfaat</dt>
+					<dd id="pemohon_pprt-PenerimaManfaat-<%%VALUE(ID)%%>" class="pemohon_pprt-PenerimaManfaat"><%%SELECT%%><%%VALUE(PenerimaManfaat)%%><%%ENDSELECT%%></dd>
+
+					<dt class="pemohon_pprt-nama_mpkk_jpkkp-caption field-caption-tv">Nama mpkk jpkkp</dt>
+					<dd id="pemohon_pprt-nama_mpkk_jpkkp-<%%VALUE(ID)%%>" class="pemohon_pprt-nama_mpkk_jpkkp"><%%SELECT%%><%%VALUE(nama_mpkk_jpkkp)%%><%%ENDSELECT%%></dd>
+
+					<dt class="pemohon_pprt-no_tel_mpkk_jpkkp-caption field-caption-tv">No tel mpkk jpkkp</dt>
+					<dd id="pemohon_pprt-no_tel_mpkk_jpkkp-<%%VALUE(ID)%%>" class="pemohon_pprt-no_tel_mpkk_jpkkp"><%%SELECT%%><%%VALUE(no_tel_mpkk_jpkkp)%%><%%ENDSELECT%%></dd>
+
+					<dt class="pemohon_pprt-catatan-caption field-caption-tv">Catatan</dt>
+					<dd id="pemohon_pprt-catatan-<%%VALUE(ID)%%>" class="pemohon_pprt-catatan"><%%SELECT%%><%%VALUE(catatan)%%><%%ENDSELECT%%></dd>
+
+					<dt class="pemohon_pprt-status_permohonan-caption field-caption-tv">Status permohonan</dt>
+					<dd id="pemohon_pprt-status_permohonan-<%%VALUE(ID)%%>" class="pemohon_pprt-status_permohonan"><%%SELECT%%><%%VALUE(status_permohonan)%%><%%ENDSELECT%%></dd>
+
+					<dt class="pemohon_pprt-status_kelulusan-caption field-caption-tv">Status kelulusan</dt>
+					<dd id="pemohon_pprt-status_kelulusan-<%%VALUE(ID)%%>" class="pemohon_pprt-status_kelulusan"><%%SELECT%%><%%VALUE(status_kelulusan)%%><%%ENDSELECT%%></dd>
+
+				</dl>
+			</div>
+		</td>

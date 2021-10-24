@@ -1,0 +1,113 @@
+<!-- Edit this file to change the layout of the detail view print preview page -->
+
+
+<div class="panel-heading"><h3 class="panel-title">
+	<strong><%%DETAIL_VIEW_TITLE%%></strong>
+	<div class="hidden-print pull-right">
+		<div class="btn-group">
+			<button type="button" id="print" onclick="window.print();" title="<%%TRANSLATION(Print)%%>" class="btn btn-primary"><i class="glyphicon glyphicon-print"></i> <%%TRANSLATION(Print)%%></button>
+			<button type="submit" id="back" title="<%%TRANSLATION(Cancel Printing)%%>" class="btn btn-default"><i class="glyphicon glyphicon-remove-circle"></i> <%%TRANSLATION(Cancel Printing)%%></button>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</h3></div>
+
+<div class="panel-body">
+	<fieldset class="form-horizontal">
+		<!-- Field: ID -->
+		<div class="form-group ljk-id" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">ID</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(id)%%></div>
+			</div>
+		</div>
+		<!-- Field: Negeri -->
+		<div class="form-group ljk-negeri" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Negeri</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="negeri<%%RND1%%>"><%%COMBOTEXT(negeri)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Daerah -->
+		<div class="form-group ljk-daerah" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Daerah</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="daerah<%%RND1%%>"><%%COMBOTEXT(daerah)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Dun -->
+		<div class="form-group ljk-dun" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Dun</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="dun<%%RND1%%>"><%%COMBOTEXT(dun)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Parlimen -->
+		<div class="form-group ljk-parlimen" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Parlimen</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="parlimen<%%RND1%%>"><%%COMBOTEXT(parlimen)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Nama Kampung -->
+		<div class="form-group ljk-kampung" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Nama Kampung</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(kampung)%%></div>
+			</div>
+		</div>
+		<!-- Field: No tiang -->
+		<div class="form-group ljk-no_tiang" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">No tiang</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(no_tiang)%%></div>
+			</div>
+		</div>
+		<!-- Field: Jenis lampu -->
+		<div class="form-group ljk-jenis_lampu" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Jenis lampu</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="jenis_lampu<%%RND1%%>"><%%COMBOTEXT(jenis_lampu)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Status -->
+		<div class="form-group ljk-status_pemasangan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Status</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(status_pemasangan)%%></div>
+			</div>
+		</div>
+		<!-- Field: Audit -->
+		<div class="form-group ljk-audit" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Audit</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(audit)%%></div>
+			</div>
+		</div>
+		<!-- Field: Catatan -->
+		<div class="form-group ljk-catatan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Catatan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(catatan)%%></div>
+			</div>
+		</div>
+		<!-- Field: Gambar -->
+		<div class="form-group ljk-gambar" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Gambar</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(gambar)%%></div>
+			</div>
+		</div>
+	</fieldset>
+</div>
+<script>
+	$j(function() {
+		// render read-only checkboxes in DVP
+		$j('form input[type=checkbox]:not(.hidden):checked')
+			.addClass('hidden')
+			.after('<i class="glyphicon glyphicon-check"></i>');
+		$j('form input[type=checkbox]:not(.hidden):not(:checked)')
+			.addClass('hidden')
+			.after('<i class="glyphicon glyphicon-unchecked"></i>')
+	})
+</script>

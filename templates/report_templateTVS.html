@@ -1,0 +1,14 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the report_init() hook (in hooks/report.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="report-projek-<%%VALUE(id)%%>" class="report-projek"><%%VALUE(projek)%%></td>
+		<td id="report-peruntukan-<%%VALUE(id)%%>" class="report-peruntukan text-center"><%%VALUE(peruntukan)%%></td>
+		<td id="report-jumlahprojek-<%%VALUE(id)%%>" class="report-jumlahprojek text-center"><%%VALUE(jumlahprojek)%%></td>
+		<td id="report-BM-<%%VALUE(id)%%>" class="report-BM text-center"><%%VALUE(BM)%%></td>
+		<td id="report-perolehan-<%%VALUE(id)%%>" class="report-perolehan text-center"><%%VALUE(perolehan)%%></td>
+		<td id="report-Dp-<%%VALUE(id)%%>" class="report-Dp text-center"><%%VALUE(Dp)%%></td>
+		<td id="report-Sp-<%%VALUE(id)%%>" class="report-Sp text-center"><%%VALUE(Sp)%%></td>

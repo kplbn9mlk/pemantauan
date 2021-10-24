@@ -1,0 +1,19 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the Laporan_MLK_init() hook (in hooks/Laporan_MLK.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="Laporan_MLK-id-<%%VALUE(id)%%>" class="Laporan_MLK-id text-right"><%%SELECT%%><%%VALUE(id)%%><%%ENDSELECT%%></td>
+		<td id="Laporan_MLK-program-<%%VALUE(id)%%>" class="Laporan_MLK-program"><%%SELECT%%><%%VALUE(program)%%><%%ENDSELECT%%></td>
+		<td id="Laporan_MLK-peruntukan-<%%VALUE(id)%%>" class="Laporan_MLK-peruntukan text-center"><%%SELECT%%><%%VALUE(peruntukan)%%><%%ENDSELECT%%></td>
+		<td id="Laporan_MLK-bil_projek-<%%VALUE(id)%%>" class="Laporan_MLK-bil_projek text-center"><%%SELECT%%><%%VALUE(bil_projek)%%><%%ENDSELECT%%></td>
+		<td id="Laporan_MLK-bm-<%%VALUE(id)%%>" class="Laporan_MLK-bm text-center"><%%SELECT%%><%%VALUE(bm)%%><%%ENDSELECT%%></td>
+		<td id="Laporan_MLK-Perolehan-<%%VALUE(id)%%>" class="Laporan_MLK-Perolehan text-center"><%%SELECT%%><%%VALUE(Perolehan)%%><%%ENDSELECT%%></td>
+		<td id="Laporan_MLK-dp-<%%VALUE(id)%%>" class="Laporan_MLK-dp text-center"><%%SELECT%%><%%VALUE(dp)%%><%%ENDSELECT%%></td>
+		<td id="Laporan_MLK-sp-<%%VALUE(id)%%>" class="Laporan_MLK-sp text-center"><%%SELECT%%><%%VALUE(sp)%%><%%ENDSELECT%%></td>
+		<td id="Laporan_MLK-link-<%%VALUE(id)%%>" class="Laporan_MLK-link"><a href="link.php?t=Laporan_MLK&f=link&i=<%%VALUE(id)%%>" target="_blank" title="<%%VALUE(link)%%>" class="btn btn-default"><i class="glyphicon glyphicon-lg glyphicon-globe text-info"></i></a></td>
+		<script>$j(function() {
+			var e_link = '<%%VALUE(link)%%>'; if(e_link == '' || e_link == '&nbsp;') $j(/*<*/ '#Laporan_MLK-link-<%%VALUE(id)%%>' /*>*/).html('');
+		});</script>

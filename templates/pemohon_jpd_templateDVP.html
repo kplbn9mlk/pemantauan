@@ -1,0 +1,248 @@
+<!-- Edit this file to change the layout of the detail view print preview page -->
+
+
+<div class="panel-heading"><h3 class="panel-title">
+	<strong><%%DETAIL_VIEW_TITLE%%></strong>
+	<div class="hidden-print pull-right">
+		<div class="btn-group">
+			<button type="button" id="print" onclick="window.print();" title="<%%TRANSLATION(Print)%%>" class="btn btn-primary"><i class="glyphicon glyphicon-print"></i> <%%TRANSLATION(Print)%%></button>
+			<button type="submit" id="back" title="<%%TRANSLATION(Cancel Printing)%%>" class="btn btn-default"><i class="glyphicon glyphicon-remove-circle"></i> <%%TRANSLATION(Cancel Printing)%%></button>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</h3></div>
+
+<div class="panel-body">
+	<fieldset class="form-horizontal">
+		<!-- Field: Tahun -->
+		<div class="form-group pemohon_jpd-tahun" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Tahun</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="tahun<%%RND1%%>"><%%COMBOTEXT(tahun)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Nama Projek -->
+		<div class="form-group pemohon_jpd-Nama_Projek" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Nama Projek</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(Nama_Projek)%%></div>
+			</div>
+		</div>
+		<!-- Field: NEGERI -->
+		<div class="form-group pemohon_jpd-negeri" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">NEGERI</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="negeri<%%RND1%%>"><%%COMBOTEXT(negeri)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Daerah -->
+		<div class="form-group pemohon_jpd-Daerah" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Daerah</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="Daerah<%%RND1%%>"><%%COMBOTEXT(Daerah)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Parlimen -->
+		<div class="form-group pemohon_jpd-Parlimen" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Parlimen</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="Parlimen<%%RND1%%>"><%%COMBOTEXT(Parlimen)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: DUN -->
+		<div class="form-group pemohon_jpd-DUN" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">DUN</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="DUN<%%RND1%%>"><%%COMBOTEXT(DUN)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Status tanah -->
+		<div class="form-group pemohon_jpd-status_tanah" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Status tanah</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(status_tanah)%%></div>
+			</div>
+		</div>
+		<!-- Field: Panjang Jalan (M) -->
+		<div class="form-group pemohon_jpd-PanjangJalanM" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Panjang Jalan (M)</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(PanjangJalanM)%%></div>
+			</div>
+		</div>
+		<!-- Field: Lebar (M) -->
+		<div class="form-group pemohon_jpd-LebarM" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Lebar (M)</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(LebarM)%%></div>
+			</div>
+		</div>
+		<!-- Field: Skop -->
+		<div class="form-group pemohon_jpd-skop" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Skop</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="skop<%%RND1%%>"><%%COMBOTEXT(skop)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Gambar  -->
+		<div class="form-group pemohon_jpd-gambar_projek" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Gambar </label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><script>
+				var gambar_projekSrc1<%%RND1%%>='<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar_projek)%%>';
+				var gambar_projekSrc2<%%RND1%%>='thumbnail.php?t=pemohon_jpd&f=gambar_projek&i=<%%VALUE(gambar_projek)%%>&v=dv'
+			</script>
+			<a href="#" onclick="$('gambar_projekImg<%%RND1%%>').src=($('gambar_projekImg<%%RND1%%>').src.search(/thumbnail\.php/) != -1 && gambar_projekSrc1<%%RND1%%> != '<%%BASE_UPLOAD_PATH%%>' ? gambar_projekSrc1<%%RND1%%> : gambar_projekSrc2<%%RND1%%>); return false;"><img id="gambar_projekImg<%%RND1%%>" src="thumbnail.php?t=pemohon_jpd&f=gambar_projek&i=<%%VALUE(gambar_projek)%%>&v=dv" class="img-thumbnail"></a></div>
+			</div>
+		</div>
+		<!-- Field: Gambar -->
+		<div class="form-group pemohon_jpd-gambar_projek_1" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Gambar</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><script>
+				var gambar_projek_1Src1<%%RND1%%>='<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar_projek_1)%%>';
+				var gambar_projek_1Src2<%%RND1%%>='thumbnail.php?t=pemohon_jpd&f=gambar_projek_1&i=<%%VALUE(gambar_projek_1)%%>&v=dv'
+			</script>
+			<a href="#" onclick="$('gambar_projek_1Img<%%RND1%%>').src=($('gambar_projek_1Img<%%RND1%%>').src.search(/thumbnail\.php/) != -1 && gambar_projek_1Src1<%%RND1%%> != '<%%BASE_UPLOAD_PATH%%>' ? gambar_projek_1Src1<%%RND1%%> : gambar_projek_1Src2<%%RND1%%>); return false;"><img id="gambar_projek_1Img<%%RND1%%>" src="thumbnail.php?t=pemohon_jpd&f=gambar_projek_1&i=<%%VALUE(gambar_projek_1)%%>&v=dv" class="img-thumbnail"></a></div>
+			</div>
+		</div>
+		<!-- Field: Sumber mohon -->
+		<div class="form-group pemohon_jpd-sumber_mohon" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Sumber mohon</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(sumber_mohon)%%></div>
+			</div>
+		</div>
+		<!-- Field: Peta -->
+		<div class="form-group pemohon_jpd-Peta" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Peta</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><img src="<%%GOOGLEMAPTHUMB(Peta)%%>" style="max-width: 800px;  max-height: 300px; "></div>
+			</div>
+		</div>
+		<!-- Field: Kos projek -->
+		<div class="form-group pemohon_jpd-anggaran_kos" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Kos projek</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(anggaran_kos)%%></div>
+			</div>
+		</div>
+		<!-- Field: Justifikasi -->
+		<div class="form-group pemohon_jpd-justifikasi" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Justifikasi</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(justifikasi)%%></div>
+			</div>
+		</div>
+		<!-- Field: Penerima Manfaat -->
+		<div class="form-group pemohon_jpd-PenerimaManfaat" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Penerima Manfaat</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(PenerimaManfaat)%%></div>
+			</div>
+		</div>
+		<!-- Field: Nama mpkk jpkkp -->
+		<div class="form-group pemohon_jpd-nama_mpkk_jpkkp" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Nama mpkk jpkkp</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(nama_mpkk_jpkkp)%%></div>
+			</div>
+		</div>
+		<!-- Field: No tel mpkk jpkkp -->
+		<div class="form-group pemohon_jpd-no_tel_mpkk_jpkkp" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">No tel mpkk jpkkp</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(no_tel_mpkk_jpkkp)%%></div>
+			</div>
+		</div>
+		<!-- Field: Catatan -->
+		<div class="form-group pemohon_jpd-catatan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Catatan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(catatan)%%></div>
+			</div>
+		</div>
+		<!-- Field: Status permohonan -->
+		<div class="form-group pemohon_jpd-status_permohonan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Status permohonan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(status_permohonan)%%></div>
+			</div>
+		</div>
+		<!-- Field: Status kelulusan -->
+		<div class="form-group pemohon_jpd-status_kelulusan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Status kelulusan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(status_kelulusan)%%></div>
+			</div>
+		</div>
+		<!-- Field: Sumber peruntukan -->
+		<div class="form-group pemohon_jpd-sumber_peruntukan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Sumber peruntukan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(sumber_peruntukan)%%></div>
+			</div>
+		</div>
+		<!-- Field: Dikemaskini oleh -->
+		<div class="form-group pemohon_jpd-updated" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Dikemaskini oleh</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(updated)%%></div>
+			</div>
+		</div>
+		<!-- Field: Gambar   -->
+		<div class="form-group pemohon_jpd-gambar_projek2" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Gambar  </label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><img id="gambar_projek2Img" src="thumbnail.php?t=pemohon_jpd&f=gambar_projek2&i=<%%VALUE(gambar_projek2)%%>&v=dv" class="img-thumbnail"></div>
+			</div>
+		</div>
+		<!-- Field: Gambar    -->
+		<div class="form-group pemohon_jpd-gambar_projek3" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Gambar   </label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><img id="gambar_projek3Img" src="thumbnail.php?t=pemohon_jpd&f=gambar_projek3&i=<%%VALUE(gambar_projek3)%%>&v=dv" class="img-thumbnail"></div>
+			</div>
+		</div>
+	</fieldset>
+</div>
+<script>
+	$j(function() {
+		// render read-only checkboxes in DVP
+		$j('form input[type=checkbox]:not(.hidden):checked')
+			.addClass('hidden')
+			.after('<i class="glyphicon glyphicon-check"></i>');
+		$j('form input[type=checkbox]:not(.hidden):not(:checked)')
+			.addClass('hidden')
+			.after('<i class="glyphicon glyphicon-unchecked"></i>')
+	})
+</script>
+<!-- child records -->
+<div class="panel-body">
+	<div id="pemohon_jpd-children"></div>
+</div>
+
+<script>
+	$j(function() {
+		/* prevent loading child records in multiple DVP */
+		if($j('[id=pemohon_jpd-children]').length > 1) return;
+
+		post(
+			'parent-children.php', {
+				ParentTable: 'pemohon_jpd',
+				SelectedID: '<%%VALUE(ID)%%>',
+				Operation: 'show-children-printable'
+			},
+			'pemohon_jpd-children',
+			'disable-element',
+			'loading-element',
+			apply_persisting_children
+		);
+
+		$j('form').on('click', '#children-tabs button[data-target]', function() {
+			$j(this).toggleClass('active');
+			persist_expanded_child($j(this).attr('id'));
+		});
+	})
+</script>
+

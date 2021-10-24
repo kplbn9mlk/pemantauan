@@ -1,0 +1,127 @@
+<!-- Edit this file to change the layout of the detail view print preview page -->
+
+
+<div class="panel-heading"><h3 class="panel-title">
+	<strong><%%DETAIL_VIEW_TITLE%%></strong>
+	<div class="hidden-print pull-right">
+		<div class="btn-group">
+			<button type="button" id="print" onclick="window.print();" title="<%%TRANSLATION(Print)%%>" class="btn btn-primary"><i class="glyphicon glyphicon-print"></i> <%%TRANSLATION(Print)%%></button>
+			<button type="submit" id="back" title="<%%TRANSLATION(Cancel Printing)%%>" class="btn btn-default"><i class="glyphicon glyphicon-remove-circle"></i> <%%TRANSLATION(Cancel Printing)%%></button>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</h3></div>
+
+<div class="panel-body">
+	<fieldset class="form-horizontal">
+		<!-- Field: ID -->
+		<div class="form-group Syarikat-id" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">ID</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(id)%%></div>
+			</div>
+		</div>
+		<!-- Field: Negeri -->
+		<div class="form-group Syarikat-negeri" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Negeri</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="negeri<%%RND1%%>"><%%COMBOTEXT(negeri)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Nama Syarikat -->
+		<div class="form-group Syarikat-nama_syarikat" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Nama Syarikat</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(nama_syarikat)%%></div>
+			</div>
+		</div>
+		<!-- Field: Alamat Syarikat -->
+		<div class="form-group Syarikat-Alamat" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Alamat Syarikat</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(Alamat)%%></div>
+			</div>
+		</div>
+		<!-- Field: No SSM -->
+		<div class="form-group Syarikat-no_ssm" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">No SSM</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(no_ssm)%%></div>
+			</div>
+		</div>
+		<!-- Field: No Cidb -->
+		<div class="form-group Syarikat-no_cidb" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">No Cidb</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(no_cidb)%%></div>
+			</div>
+		</div>
+		<!-- Field: Pernah Mendapat Kerja KPLB -->
+		<div class="form-group Syarikat-lantik_kplb" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Pernah Mendapat Kerja KPLB</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(lantik_kplb)%%></div>
+			</div>
+		</div>
+		<!-- Field: Tahun Dilantik oleh KPLB -->
+		<div class="form-group Syarikat-Tahun_lantik" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Tahun Dilantik oleh KPLB</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="Tahun_lantik<%%RND1%%>"><%%COMBOTEXT(Tahun_lantik)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Tarikh Lantik -->
+		<div class="form-group Syarikat-tarikh_dokumen" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Tarikh Lantik</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(tarikh_dokumen)%%></div>
+			</div>
+		</div>
+		<!-- Field: Tajuk kerja -->
+		<div class="form-group Syarikat-tajuk_kerja" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Tajuk kerja</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(tajuk_kerja)%%></div>
+			</div>
+		</div>
+		<!-- Field: Kaedah perolehan -->
+		<div class="form-group Syarikat-kaedah_perolehan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Kaedah perolehan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%COMBOTEXT(kaedah_perolehan)%%></div>
+			</div>
+		</div>
+		<!-- Field: Kos projek -->
+		<div class="form-group Syarikat-kos_projek" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Kos projek</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(kos_projek)%%></div>
+			</div>
+		</div>
+		<!-- Field: Senarai Hitam -->
+		<div class="form-group Syarikat-blacklist" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Senarai Hitam</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><span id="blacklist<%%RND1%%>"><%%COMBOTEXT(blacklist)%%></span></div>
+			</div>
+		</div>
+		<!-- Field: Catatan -->
+		<div class="form-group Syarikat-catatan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Catatan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(catatan)%%></div>
+			</div>
+		</div>
+	</fieldset>
+</div>
+<script>
+	$j(function() {
+		// render read-only checkboxes in DVP
+		$j('form input[type=checkbox]:not(.hidden):checked')
+			.addClass('hidden')
+			.after('<i class="glyphicon glyphicon-check"></i>');
+		$j('form input[type=checkbox]:not(.hidden):not(:checked)')
+			.addClass('hidden')
+			.after('<i class="glyphicon glyphicon-unchecked"></i>')
+	})
+</script>

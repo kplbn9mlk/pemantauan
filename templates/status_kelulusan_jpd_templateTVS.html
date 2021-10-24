@@ -1,0 +1,11 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the status_kelulusan_jpd_init() hook (in hooks/status_kelulusan_jpd.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="status_kelulusan_jpd-pemohon-<%%VALUE(id)%%>" class="status_kelulusan_jpd-pemohon"><%%VALUE(pemohon)%%></td>
+		<td id="status_kelulusan_jpd-kelulusan-<%%VALUE(id)%%>" class="status_kelulusan_jpd-kelulusan"><%%VALUE(kelulusan)%%></td>
+		<td id="status_kelulusan_jpd-tarikh_kelulusan-<%%VALUE(id)%%>" class="status_kelulusan_jpd-tarikh_kelulusan"><%%VALUE(tarikh_kelulusan)%%></td>
+		<td id="status_kelulusan_jpd-pelulus-<%%VALUE(id)%%>" class="status_kelulusan_jpd-pelulus"><%%VALUE(pelulus)%%></td>

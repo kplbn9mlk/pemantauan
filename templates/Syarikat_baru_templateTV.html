@@ -1,0 +1,17 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the Syarikat_baru_init() hook (in hooks/Syarikat_baru.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="Syarikat_baru-Tahun_daftar-<%%VALUE(id)%%>" class="Syarikat_baru-Tahun_daftar text-right"><%%SELECT%%><%%VALUE(Tahun_daftar)%%><%%ENDSELECT%%></td>
+		<td id="Syarikat_baru-negeri-<%%VALUE(id)%%>" class="Syarikat_baru-negeri"><%%SELECT%%><%%VALUE(negeri)%%><%%ENDSELECT%%></td>
+		<td id="Syarikat_baru-daerah-<%%VALUE(id)%%>" class="Syarikat_baru-daerah"><%%SELECT%%><%%VALUE(daerah)%%><%%ENDSELECT%%></td>
+		<td id="Syarikat_baru-nama_pemilik-<%%VALUE(id)%%>" class="Syarikat_baru-nama_pemilik"><%%SELECT%%><%%VALUE(nama_pemilik)%%><%%ENDSELECT%%></td>
+		<td id="Syarikat_baru-nama_syarikat-<%%VALUE(id)%%>" class="Syarikat_baru-nama_syarikat"><%%SELECT%%><%%VALUE(nama_syarikat)%%><%%ENDSELECT%%></td>
+		<td id="Syarikat_baru-Alamat-<%%VALUE(id)%%>" class="Syarikat_baru-Alamat"><%%SELECT%%><%%VALUE(Alamat)%%><%%ENDSELECT%%></td>
+		<td id="Syarikat_baru-no_ssm-<%%VALUE(id)%%>" class="Syarikat_baru-no_ssm"><%%SELECT%%><%%VALUE(no_ssm)%%><%%ENDSELECT%%></td>
+		<td id="Syarikat_baru-no_cidb-<%%VALUE(id)%%>" class="Syarikat_baru-no_cidb"><%%SELECT%%><%%VALUE(no_cidb)%%><%%ENDSELECT%%></td>
+		<td id="Syarikat_baru-no_evendor-<%%VALUE(id)%%>" class="Syarikat_baru-no_evendor"><%%SELECT%%><%%VALUE(no_evendor)%%><%%ENDSELECT%%></td>
+		<td id="Syarikat_baru-email-<%%VALUE(id)%%>" class="Syarikat_baru-email"><%%VALUE(email)%%></td>

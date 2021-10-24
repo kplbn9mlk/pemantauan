@@ -1,0 +1,38 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the  and  formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the jpd_de_REKOD_init() hook (in hooks/jpd_de_REKOD.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="jpd_de_REKOD-tahun_laksana-<%%VALUE(ID)%%>" class="jpd_de_REKOD-tahun_laksana"><%%VALUE(tahun_laksana)%%></td>
+		<td id="jpd_de_REKOD-Kelulusan-<%%VALUE(ID)%%>" class="jpd_de_REKOD-Kelulusan"><%%VALUE(Kelulusan)%%></td>
+		<td id="jpd_de_REKOD-NamaProjek-<%%VALUE(ID)%%>" class="jpd_de_REKOD-NamaProjek"><%%VALUE(NamaProjek)%%></td>
+		<td id="jpd_de_REKOD-negeri-<%%VALUE(ID)%%>" class="jpd_de_REKOD-negeri"><%%VALUE(negeri)%%></td>
+		<td id="jpd_de_REKOD-Daerah-<%%VALUE(ID)%%>" class="jpd_de_REKOD-Daerah"><%%VALUE(Daerah)%%></td>
+		<td id="jpd_de_REKOD-Parlimen-<%%VALUE(ID)%%>" class="jpd_de_REKOD-Parlimen"><%%VALUE(Parlimen)%%></td>
+		<td id="jpd_de_REKOD-DUN-<%%VALUE(ID)%%>" class="jpd_de_REKOD-DUN"><%%VALUE(DUN)%%></td>
+		<td id="jpd_de_REKOD-AgensiPelaksana-<%%VALUE(ID)%%>" class="jpd_de_REKOD-AgensiPelaksana"><%%VALUE(AgensiPelaksana)%%></td>
+		<td id="jpd_de_REKOD-agensi_pembayar-<%%VALUE(ID)%%>" class="jpd_de_REKOD-agensi_pembayar"><%%VALUE(agensi_pembayar)%%></td>
+		<td id="jpd_de_REKOD-penyelia_projek-<%%VALUE(ID)%%>" class="jpd_de_REKOD-penyelia_projek"><%%VALUE(penyelia_projek)%%></td>
+		<td id="jpd_de_REKOD-NamaKontraktor-<%%VALUE(ID)%%>" class="jpd_de_REKOD-NamaKontraktor"><%%VALUE(NamaKontraktor)%%></td>
+		<td id="jpd_de_REKOD-TarikhSST-<%%VALUE(ID)%%>" class="jpd_de_REKOD-TarikhSST"><%%VALUE(TarikhSST)%%></td>
+		<td id="jpd_de_REKOD-TarikhSiapProjek-<%%VALUE(ID)%%>" class="jpd_de_REKOD-TarikhSiapProjek"><%%VALUE(TarikhSiapProjek)%%></td>
+		<td id="jpd_de_REKOD-TarikhSiapSepenuhnya-<%%VALUE(ID)%%>" class="jpd_de_REKOD-TarikhSiapSepenuhnya"><%%VALUE(TarikhSiapSepenuhnya)%%></td>
+		<td id="jpd_de_REKOD-PanjangJalanM-<%%VALUE(ID)%%>" class="jpd_de_REKOD-PanjangJalanM"><%%VALUE(PanjangJalanM)%%></td>
+		<td id="jpd_de_REKOD-LebarM-<%%VALUE(ID)%%>" class="jpd_de_REKOD-LebarM"><%%VALUE(LebarM)%%></td>
+		<td id="jpd_de_REKOD-Latitud-<%%VALUE(ID)%%>" class="jpd_de_REKOD-Latitud"><%%VALUE(Latitud)%%></td>
+		<td id="jpd_de_REKOD-Longitud-<%%VALUE(ID)%%>" class="jpd_de_REKOD-Longitud"><%%VALUE(Longitud)%%></td>
+		<td id="jpd_de_REKOD-PeruntukanDiluluskan-<%%VALUE(ID)%%>" class="jpd_de_REKOD-PeruntukanDiluluskan text-right"><%%VALUE(PeruntukanDiluluskan)%%></td>
+		<td id="jpd_de_REKOD-peruntukan_dipinda-<%%VALUE(ID)%%>" class="jpd_de_REKOD-peruntukan_dipinda text-right"><%%VALUE(peruntukan_dipinda)%%></td>
+		<td id="jpd_de_REKOD-Kosprojek-<%%VALUE(ID)%%>" class="jpd_de_REKOD-Kosprojek text-right"><%%VALUE(Kosprojek)%%></td>
+		<td id="jpd_de_REKOD-KKSVO-<%%VALUE(ID)%%>" class="jpd_de_REKOD-KKSVO text-right"><%%VALUE(KKSVO)%%></td>
+		<td id="jpd_de_REKOD-Perbelanjaan-<%%VALUE(ID)%%>" class="jpd_de_REKOD-Perbelanjaan text-right"><%%VALUE(Perbelanjaan)%%></td>
+		<td id="jpd_de_REKOD-penjimatan-<%%VALUE(ID)%%>" class="jpd_de_REKOD-penjimatan text-right"><%%VALUE(penjimatan)%%></td>
+		<td id="jpd_de_REKOD-Status-<%%VALUE(ID)%%>" class="jpd_de_REKOD-Status"><%%VALUE(Status)%%></td>
+		<td id="jpd_de_REKOD-PenerimaManfaat-<%%VALUE(ID)%%>" class="jpd_de_REKOD-PenerimaManfaat"><%%VALUE(PenerimaManfaat)%%></td>
+		<td id="jpd_de_REKOD-sumber_permohonan-<%%VALUE(ID)%%>" class="jpd_de_REKOD-sumber_permohonan"><%%VALUE(sumber_permohonan)%%></td>
+		<td id="jpd_de_REKOD-catatan-<%%VALUE(ID)%%>" class="jpd_de_REKOD-catatan"><%%VALUE(catatan)%%></td>
+		<td id="jpd_de_REKOD-gambar1-<%%VALUE(ID)%%>" class="jpd_de_REKOD-gambar1"><a href="<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar1)%%>" data-lightbox="jpd_de_REKOD-gambar1"><img src="thumbnail.php?i=<%%VALUE(gambar1)%%>&t=jpd_de_REKOD&f=gambar1&v=tv" class="img-thumbnail"></a></td>
+		<td id="jpd_de_REKOD-gambar2-<%%VALUE(ID)%%>" class="jpd_de_REKOD-gambar2"><a href="<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar2)%%>" data-lightbox="jpd_de_REKOD-gambar2"><img src="thumbnail.php?i=<%%VALUE(gambar2)%%>&t=jpd_de_REKOD&f=gambar2&v=tv" class="img-thumbnail"></a></td>
+		<td id="jpd_de_REKOD-gambar3-<%%VALUE(ID)%%>" class="jpd_de_REKOD-gambar3"><a href="<%%BASE_UPLOAD_PATH%%><%%VALUE(gambar3)%%>" data-lightbox="jpd_de_REKOD-gambar3"><img src="thumbnail.php?i=<%%VALUE(gambar3)%%>&t=jpd_de_REKOD&f=gambar3&v=tv" class="img-thumbnail"></a></td>
