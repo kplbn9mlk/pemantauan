@@ -414,13 +414,27 @@
 
 			return $data;
 		},
-		'Laporan_N9' => function($data, $options = []) {
+		'Laporan_N9_fiz' => function($data, $options = []) {
 			if(isset($data['peruntukan'])) $data['peruntukan'] = preg_replace('/[^\d\.]/', '', $data['peruntukan']);
 
 			return $data;
 		},
-		'Laporan_MLK' => function($data, $options = []) {
+		'Kew_n9' => function($data, $options = []) {
 			if(isset($data['peruntukan'])) $data['peruntukan'] = preg_replace('/[^\d\.]/', '', $data['peruntukan']);
+			if(isset($data['belanja'])) $data['belanja'] = preg_replace('/[^\d\.]/', '', $data['belanja']);
+			if(isset($data['jimat'])) $data['jimat'] = preg_replace('/[^\d\.]/', '', $data['jimat']);
+
+			return $data;
+		},
+		'Laporan_MLK_fiz' => function($data, $options = []) {
+			if(isset($data['peruntukan'])) $data['peruntukan'] = preg_replace('/[^\d\.]/', '', $data['peruntukan']);
+
+			return $data;
+		},
+		'Kew_MLK' => function($data, $options = []) {
+			if(isset($data['peruntukan'])) $data['peruntukan'] = preg_replace('/[^\d\.]/', '', $data['peruntukan']);
+			if(isset($data['belanja'])) $data['belanja'] = preg_replace('/[^\d\.]/', '', $data['belanja']);
+			if(isset($data['jimat'])) $data['jimat'] = preg_replace('/[^\d\.]/', '', $data['jimat']);
 
 			return $data;
 		},
@@ -467,8 +481,10 @@
 		'ekasih' => function($data, $options = []) { return true; },
 		'BLACKLIST' => function($data, $options = []) { return true; },
 		'LJK_JENIS' => function($data, $options = []) { return true; },
-		'Laporan_N9' => function($data, $options = []) { return true; },
-		'Laporan_MLK' => function($data, $options = []) { return true; },
+		'Laporan_N9_fiz' => function($data, $options = []) { return true; },
+		'Kew_n9' => function($data, $options = []) { return true; },
+		'Laporan_MLK_fiz' => function($data, $options = []) { return true; },
+		'Kew_MLK' => function($data, $options = []) { return true; },
 	];
 
 	/*

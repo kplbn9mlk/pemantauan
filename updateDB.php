@@ -997,8 +997,8 @@
 		);
 
 		setupTable(
-			'Laporan_N9', " 
-			CREATE TABLE IF NOT EXISTS `Laporan_N9` ( 
+			'Laporan_N9_fiz', " 
+			CREATE TABLE IF NOT EXISTS `Laporan_N9_fiz` ( 
 				`id` TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
 				PRIMARY KEY (`id`),
 				`program` VARCHAR(100) NULL,
@@ -1014,8 +1014,22 @@
 		);
 
 		setupTable(
-			'Laporan_MLK', " 
-			CREATE TABLE IF NOT EXISTS `Laporan_MLK` ( 
+			'Kew_n9', " 
+			CREATE TABLE IF NOT EXISTS `Kew_n9` ( 
+				`ID` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+				PRIMARY KEY (`ID`),
+				`program` VARCHAR(100) NULL,
+				`bil_projek` INT NULL,
+				`peruntukan` DECIMAL(10,2) NULL,
+				`belanja` DECIMAL(10,2) NULL,
+				`jimat` DECIMAL(10,2) NULL
+			) CHARSET utf8",
+			$silent
+		);
+
+		setupTable(
+			'Laporan_MLK_fiz', " 
+			CREATE TABLE IF NOT EXISTS `Laporan_MLK_fiz` ( 
 				`id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
 				PRIMARY KEY (`id`),
 				`program` VARCHAR(100) NULL,
@@ -1026,6 +1040,20 @@
 				`dp` INT NULL,
 				`sp` INT NULL,
 				`link` VARCHAR(100) NULL
+			) CHARSET utf8",
+			$silent
+		);
+
+		setupTable(
+			'Kew_MLK', " 
+			CREATE TABLE IF NOT EXISTS `Kew_MLK` ( 
+				`ID` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+				PRIMARY KEY (`ID`),
+				`program` VARCHAR(100) NULL,
+				`bil_projek` INT NULL,
+				`peruntukan` DECIMAL(10,2) NULL,
+				`belanja` DECIMAL(10,2) NULL,
+				`jimat` DECIMAL(10,2) NULL
 			) CHARSET utf8",
 			$silent
 		);

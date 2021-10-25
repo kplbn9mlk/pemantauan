@@ -204,9 +204,13 @@
 			],
 			'LJK_JENIS' => [
 			],
-			'Laporan_N9' => [
+			'Laporan_N9_fiz' => [
 			],
-			'Laporan_MLK' => [
+			'Kew_n9' => [
+			],
+			'Laporan_MLK_fiz' => [
+			],
+			'Kew_MLK' => [
 			],
 		];
 

@@ -713,41 +713,77 @@ LJK_JENIS_delete1Tip=["",spacer+"This option allows each member of the group to 
 LJK_JENIS_delete2Tip=["",spacer+"This option allows each member of the group to delete any record owned by any member of the group in the 'LJK JENIS' table."];
 LJK_JENIS_delete3Tip=["",spacer+"This option allows each member of the group to delete any records in the 'LJK JENIS' table."];
 
-// Laporan_N9 table
-Laporan_N9_addTip=["",spacer+"This option allows all members of the group to add records to the 'KPLB N.SEMBILAN' table. A member who adds a record to the table becomes the 'owner' of that record."];
+// Laporan_N9_fiz table
+Laporan_N9_fiz_addTip=["",spacer+"This option allows all members of the group to add records to the 'FIZIKAL N.SEMBILAN' table. A member who adds a record to the table becomes the 'owner' of that record."];
 
-Laporan_N9_view0Tip=["",spacer+"This option prohibits all members of the group from viewing any record in the 'KPLB N.SEMBILAN' table."];
-Laporan_N9_view1Tip=["",spacer+"This option allows each member of the group to view only his own records in the 'KPLB N.SEMBILAN' table."];
-Laporan_N9_view2Tip=["",spacer+"This option allows each member of the group to view any record owned by any member of the group in the 'KPLB N.SEMBILAN' table."];
-Laporan_N9_view3Tip=["",spacer+"This option allows each member of the group to view all records in the 'KPLB N.SEMBILAN' table."];
+Laporan_N9_fiz_view0Tip=["",spacer+"This option prohibits all members of the group from viewing any record in the 'FIZIKAL N.SEMBILAN' table."];
+Laporan_N9_fiz_view1Tip=["",spacer+"This option allows each member of the group to view only his own records in the 'FIZIKAL N.SEMBILAN' table."];
+Laporan_N9_fiz_view2Tip=["",spacer+"This option allows each member of the group to view any record owned by any member of the group in the 'FIZIKAL N.SEMBILAN' table."];
+Laporan_N9_fiz_view3Tip=["",spacer+"This option allows each member of the group to view all records in the 'FIZIKAL N.SEMBILAN' table."];
 
-Laporan_N9_edit0Tip=["",spacer+"This option prohibits all members of the group from modifying any record in the 'KPLB N.SEMBILAN' table."];
-Laporan_N9_edit1Tip=["",spacer+"This option allows each member of the group to edit only his own records in the 'KPLB N.SEMBILAN' table."];
-Laporan_N9_edit2Tip=["",spacer+"This option allows each member of the group to edit any record owned by any member of the group in the 'KPLB N.SEMBILAN' table."];
-Laporan_N9_edit3Tip=["",spacer+"This option allows each member of the group to edit any records in the 'KPLB N.SEMBILAN' table, regardless of their owner."];
+Laporan_N9_fiz_edit0Tip=["",spacer+"This option prohibits all members of the group from modifying any record in the 'FIZIKAL N.SEMBILAN' table."];
+Laporan_N9_fiz_edit1Tip=["",spacer+"This option allows each member of the group to edit only his own records in the 'FIZIKAL N.SEMBILAN' table."];
+Laporan_N9_fiz_edit2Tip=["",spacer+"This option allows each member of the group to edit any record owned by any member of the group in the 'FIZIKAL N.SEMBILAN' table."];
+Laporan_N9_fiz_edit3Tip=["",spacer+"This option allows each member of the group to edit any records in the 'FIZIKAL N.SEMBILAN' table, regardless of their owner."];
 
-Laporan_N9_delete0Tip=["",spacer+"This option prohibits all members of the group from deleting any record in the 'KPLB N.SEMBILAN' table."];
-Laporan_N9_delete1Tip=["",spacer+"This option allows each member of the group to delete only his own records in the 'KPLB N.SEMBILAN' table."];
-Laporan_N9_delete2Tip=["",spacer+"This option allows each member of the group to delete any record owned by any member of the group in the 'KPLB N.SEMBILAN' table."];
-Laporan_N9_delete3Tip=["",spacer+"This option allows each member of the group to delete any records in the 'KPLB N.SEMBILAN' table."];
+Laporan_N9_fiz_delete0Tip=["",spacer+"This option prohibits all members of the group from deleting any record in the 'FIZIKAL N.SEMBILAN' table."];
+Laporan_N9_fiz_delete1Tip=["",spacer+"This option allows each member of the group to delete only his own records in the 'FIZIKAL N.SEMBILAN' table."];
+Laporan_N9_fiz_delete2Tip=["",spacer+"This option allows each member of the group to delete any record owned by any member of the group in the 'FIZIKAL N.SEMBILAN' table."];
+Laporan_N9_fiz_delete3Tip=["",spacer+"This option allows each member of the group to delete any records in the 'FIZIKAL N.SEMBILAN' table."];
 
-// Laporan_MLK table
-Laporan_MLK_addTip=["",spacer+"This option allows all members of the group to add records to the 'KPLB MELAKA' table. A member who adds a record to the table becomes the 'owner' of that record."];
+// Kew_n9 table
+Kew_n9_addTip=["",spacer+"This option allows all members of the group to add records to the 'KEWANGAN NEGERI SEMBILAN' table. A member who adds a record to the table becomes the 'owner' of that record."];
 
-Laporan_MLK_view0Tip=["",spacer+"This option prohibits all members of the group from viewing any record in the 'KPLB MELAKA' table."];
-Laporan_MLK_view1Tip=["",spacer+"This option allows each member of the group to view only his own records in the 'KPLB MELAKA' table."];
-Laporan_MLK_view2Tip=["",spacer+"This option allows each member of the group to view any record owned by any member of the group in the 'KPLB MELAKA' table."];
-Laporan_MLK_view3Tip=["",spacer+"This option allows each member of the group to view all records in the 'KPLB MELAKA' table."];
+Kew_n9_view0Tip=["",spacer+"This option prohibits all members of the group from viewing any record in the 'KEWANGAN NEGERI SEMBILAN' table."];
+Kew_n9_view1Tip=["",spacer+"This option allows each member of the group to view only his own records in the 'KEWANGAN NEGERI SEMBILAN' table."];
+Kew_n9_view2Tip=["",spacer+"This option allows each member of the group to view any record owned by any member of the group in the 'KEWANGAN NEGERI SEMBILAN' table."];
+Kew_n9_view3Tip=["",spacer+"This option allows each member of the group to view all records in the 'KEWANGAN NEGERI SEMBILAN' table."];
 
-Laporan_MLK_edit0Tip=["",spacer+"This option prohibits all members of the group from modifying any record in the 'KPLB MELAKA' table."];
-Laporan_MLK_edit1Tip=["",spacer+"This option allows each member of the group to edit only his own records in the 'KPLB MELAKA' table."];
-Laporan_MLK_edit2Tip=["",spacer+"This option allows each member of the group to edit any record owned by any member of the group in the 'KPLB MELAKA' table."];
-Laporan_MLK_edit3Tip=["",spacer+"This option allows each member of the group to edit any records in the 'KPLB MELAKA' table, regardless of their owner."];
+Kew_n9_edit0Tip=["",spacer+"This option prohibits all members of the group from modifying any record in the 'KEWANGAN NEGERI SEMBILAN' table."];
+Kew_n9_edit1Tip=["",spacer+"This option allows each member of the group to edit only his own records in the 'KEWANGAN NEGERI SEMBILAN' table."];
+Kew_n9_edit2Tip=["",spacer+"This option allows each member of the group to edit any record owned by any member of the group in the 'KEWANGAN NEGERI SEMBILAN' table."];
+Kew_n9_edit3Tip=["",spacer+"This option allows each member of the group to edit any records in the 'KEWANGAN NEGERI SEMBILAN' table, regardless of their owner."];
 
-Laporan_MLK_delete0Tip=["",spacer+"This option prohibits all members of the group from deleting any record in the 'KPLB MELAKA' table."];
-Laporan_MLK_delete1Tip=["",spacer+"This option allows each member of the group to delete only his own records in the 'KPLB MELAKA' table."];
-Laporan_MLK_delete2Tip=["",spacer+"This option allows each member of the group to delete any record owned by any member of the group in the 'KPLB MELAKA' table."];
-Laporan_MLK_delete3Tip=["",spacer+"This option allows each member of the group to delete any records in the 'KPLB MELAKA' table."];
+Kew_n9_delete0Tip=["",spacer+"This option prohibits all members of the group from deleting any record in the 'KEWANGAN NEGERI SEMBILAN' table."];
+Kew_n9_delete1Tip=["",spacer+"This option allows each member of the group to delete only his own records in the 'KEWANGAN NEGERI SEMBILAN' table."];
+Kew_n9_delete2Tip=["",spacer+"This option allows each member of the group to delete any record owned by any member of the group in the 'KEWANGAN NEGERI SEMBILAN' table."];
+Kew_n9_delete3Tip=["",spacer+"This option allows each member of the group to delete any records in the 'KEWANGAN NEGERI SEMBILAN' table."];
+
+// Laporan_MLK_fiz table
+Laporan_MLK_fiz_addTip=["",spacer+"This option allows all members of the group to add records to the 'FIZIKAL MELAKA' table. A member who adds a record to the table becomes the 'owner' of that record."];
+
+Laporan_MLK_fiz_view0Tip=["",spacer+"This option prohibits all members of the group from viewing any record in the 'FIZIKAL MELAKA' table."];
+Laporan_MLK_fiz_view1Tip=["",spacer+"This option allows each member of the group to view only his own records in the 'FIZIKAL MELAKA' table."];
+Laporan_MLK_fiz_view2Tip=["",spacer+"This option allows each member of the group to view any record owned by any member of the group in the 'FIZIKAL MELAKA' table."];
+Laporan_MLK_fiz_view3Tip=["",spacer+"This option allows each member of the group to view all records in the 'FIZIKAL MELAKA' table."];
+
+Laporan_MLK_fiz_edit0Tip=["",spacer+"This option prohibits all members of the group from modifying any record in the 'FIZIKAL MELAKA' table."];
+Laporan_MLK_fiz_edit1Tip=["",spacer+"This option allows each member of the group to edit only his own records in the 'FIZIKAL MELAKA' table."];
+Laporan_MLK_fiz_edit2Tip=["",spacer+"This option allows each member of the group to edit any record owned by any member of the group in the 'FIZIKAL MELAKA' table."];
+Laporan_MLK_fiz_edit3Tip=["",spacer+"This option allows each member of the group to edit any records in the 'FIZIKAL MELAKA' table, regardless of their owner."];
+
+Laporan_MLK_fiz_delete0Tip=["",spacer+"This option prohibits all members of the group from deleting any record in the 'FIZIKAL MELAKA' table."];
+Laporan_MLK_fiz_delete1Tip=["",spacer+"This option allows each member of the group to delete only his own records in the 'FIZIKAL MELAKA' table."];
+Laporan_MLK_fiz_delete2Tip=["",spacer+"This option allows each member of the group to delete any record owned by any member of the group in the 'FIZIKAL MELAKA' table."];
+Laporan_MLK_fiz_delete3Tip=["",spacer+"This option allows each member of the group to delete any records in the 'FIZIKAL MELAKA' table."];
+
+// Kew_MLK table
+Kew_MLK_addTip=["",spacer+"This option allows all members of the group to add records to the 'KEWANGAN MELAKA' table. A member who adds a record to the table becomes the 'owner' of that record."];
+
+Kew_MLK_view0Tip=["",spacer+"This option prohibits all members of the group from viewing any record in the 'KEWANGAN MELAKA' table."];
+Kew_MLK_view1Tip=["",spacer+"This option allows each member of the group to view only his own records in the 'KEWANGAN MELAKA' table."];
+Kew_MLK_view2Tip=["",spacer+"This option allows each member of the group to view any record owned by any member of the group in the 'KEWANGAN MELAKA' table."];
+Kew_MLK_view3Tip=["",spacer+"This option allows each member of the group to view all records in the 'KEWANGAN MELAKA' table."];
+
+Kew_MLK_edit0Tip=["",spacer+"This option prohibits all members of the group from modifying any record in the 'KEWANGAN MELAKA' table."];
+Kew_MLK_edit1Tip=["",spacer+"This option allows each member of the group to edit only his own records in the 'KEWANGAN MELAKA' table."];
+Kew_MLK_edit2Tip=["",spacer+"This option allows each member of the group to edit any record owned by any member of the group in the 'KEWANGAN MELAKA' table."];
+Kew_MLK_edit3Tip=["",spacer+"This option allows each member of the group to edit any records in the 'KEWANGAN MELAKA' table, regardless of their owner."];
+
+Kew_MLK_delete0Tip=["",spacer+"This option prohibits all members of the group from deleting any record in the 'KEWANGAN MELAKA' table."];
+Kew_MLK_delete1Tip=["",spacer+"This option allows each member of the group to delete only his own records in the 'KEWANGAN MELAKA' table."];
+Kew_MLK_delete2Tip=["",spacer+"This option allows each member of the group to delete any record owned by any member of the group in the 'KEWANGAN MELAKA' table."];
+Kew_MLK_delete3Tip=["",spacer+"This option allows each member of the group to delete any records in the 'KEWANGAN MELAKA' table."];
 
 /*
 	Style syntax:

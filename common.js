@@ -866,13 +866,25 @@ function LJK_JENIS_validateData() {
 
 	return !errors;
 }
-function Laporan_N9_validateData() {
+function Laporan_N9_fiz_validateData() {
 	$j('.has-error').removeClass('has-error');
 	var errors = false;
 
 	return !errors;
 }
-function Laporan_MLK_validateData() {
+function Kew_n9_validateData() {
+	$j('.has-error').removeClass('has-error');
+	var errors = false;
+
+	return !errors;
+}
+function Laporan_MLK_fiz_validateData() {
+	$j('.has-error').removeClass('has-error');
+	var errors = false;
+
+	return !errors;
+}
+function Kew_MLK_validateData() {
 	$j('.has-error').removeClass('has-error');
 	var errors = false;
 

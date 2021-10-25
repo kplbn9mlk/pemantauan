@@ -2144,9 +2144,13 @@
 		),
 		'LJK_JENIS' => array(
 		),
-		'Laporan_N9' => array(
+		'Laporan_N9_fiz' => array(
 		),
-		'Laporan_MLK' => array(
+		'Kew_n9' => array(
+		),
+		'Laporan_MLK_fiz' => array(
+		),
+		'Kew_MLK' => array(
 		),
 	);
 

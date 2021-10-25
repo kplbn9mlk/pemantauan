@@ -84,8 +84,10 @@
 			'ekasih' => ['Ekasih', '', 'table.gif', 'DATABASE'],
 			'BLACKLIST' => ['BLACKLIST', '', 'table.gif', 'DATABASE'],
 			'LJK_JENIS' => ['LJK JENIS', '', 'table.gif', 'DATABASE'],
-			'Laporan_N9' => ['KPLB N.SEMBILAN', '', 'resources/table_icons/report_edit.png', 'LAPORAN PROJEK'],
-			'Laporan_MLK' => ['KPLB MELAKA', '', 'resources/table_icons/report_edit.png', 'LAPORAN PROJEK'],
+			'Laporan_N9_fiz' => ['FIZIKAL N.SEMBILAN', '', 'resources/table_icons/report_edit.png', 'LAPORAN PROJEK'],
+			'Kew_n9' => ['KEWANGAN NEGERI SEMBILAN', '', 'table.gif', 'LAPORAN PROJEK'],
+			'Laporan_MLK_fiz' => ['FIZIKAL MELAKA', '', 'resources/table_icons/report_edit.png', 'LAPORAN PROJEK'],
+			'Kew_MLK' => ['KEWANGAN MELAKA', '', 'table.gif', 'LAPORAN PROJEK'],
 		];
 		if($skip_authentication || getLoggedAdmin()) return $arrTables;
 
@@ -209,8 +211,10 @@
 			'ekasih' => "`ekasih`.`id` as 'id', `ekasih`.`status_ekasih` as 'status_ekasih'",
 			'BLACKLIST' => "`BLACKLIST`.`ID` as 'ID', `BLACKLIST`.`disenaraihitamkan` as 'disenaraihitamkan', `BLACKLIST`.`sebab` as 'sebab'",
 			'LJK_JENIS' => "`LJK_JENIS`.`id` as 'id', `LJK_JENIS`.`jenis_lampu` as 'jenis_lampu'",
-			'Laporan_N9' => "`Laporan_N9`.`id` as 'id', `Laporan_N9`.`program` as 'program', FORMAT(`Laporan_N9`.`peruntukan`, 2) as 'peruntukan', `Laporan_N9`.`bil_projek` as 'bil_projek', `Laporan_N9`.`bm` as 'bm', `Laporan_N9`.`Perolehan` as 'Perolehan', `Laporan_N9`.`dp` as 'dp', `Laporan_N9`.`sp` as 'sp', `Laporan_N9`.`link` as 'link'",
-			'Laporan_MLK' => "`Laporan_MLK`.`id` as 'id', `Laporan_MLK`.`program` as 'program', FORMAT(`Laporan_MLK`.`peruntukan`, 2) as 'peruntukan', `Laporan_MLK`.`bil_projek` as 'bil_projek', `Laporan_MLK`.`bm` as 'bm', `Laporan_MLK`.`Perolehan` as 'Perolehan', `Laporan_MLK`.`dp` as 'dp', `Laporan_MLK`.`sp` as 'sp', `Laporan_MLK`.`link` as 'link'",
+			'Laporan_N9_fiz' => "`Laporan_N9_fiz`.`id` as 'id', `Laporan_N9_fiz`.`program` as 'program', FORMAT(`Laporan_N9_fiz`.`peruntukan`, 2) as 'peruntukan', `Laporan_N9_fiz`.`bil_projek` as 'bil_projek', `Laporan_N9_fiz`.`bm` as 'bm', `Laporan_N9_fiz`.`Perolehan` as 'Perolehan', `Laporan_N9_fiz`.`dp` as 'dp', `Laporan_N9_fiz`.`sp` as 'sp', `Laporan_N9_fiz`.`link` as 'link'",
+			'Kew_n9' => "`Kew_n9`.`ID` as 'ID', `Kew_n9`.`program` as 'program', `Kew_n9`.`bil_projek` as 'bil_projek', FORMAT(`Kew_n9`.`peruntukan`, 2) as 'peruntukan', FORMAT(`Kew_n9`.`belanja`, 2) as 'belanja', FORMAT(`Kew_n9`.`jimat`, 2) as 'jimat'",
+			'Laporan_MLK_fiz' => "`Laporan_MLK_fiz`.`id` as 'id', `Laporan_MLK_fiz`.`program` as 'program', FORMAT(`Laporan_MLK_fiz`.`peruntukan`, 2) as 'peruntukan', `Laporan_MLK_fiz`.`bil_projek` as 'bil_projek', `Laporan_MLK_fiz`.`bm` as 'bm', `Laporan_MLK_fiz`.`Perolehan` as 'Perolehan', `Laporan_MLK_fiz`.`dp` as 'dp', `Laporan_MLK_fiz`.`sp` as 'sp', `Laporan_MLK_fiz`.`link` as 'link'",
+			'Kew_MLK' => "`Kew_MLK`.`ID` as 'ID', `Kew_MLK`.`program` as 'program', `Kew_MLK`.`bil_projek` as 'bil_projek', FORMAT(`Kew_MLK`.`peruntukan`, 2) as 'peruntukan', FORMAT(`Kew_MLK`.`belanja`, 2) as 'belanja', FORMAT(`Kew_MLK`.`jimat`, 2) as 'jimat'",
 		];
 
 		if(isset($sql_fields[$table_name])) return $sql_fields[$table_name];
@@ -261,8 +265,10 @@
 			'ekasih' => "`ekasih` ",
 			'BLACKLIST' => "`BLACKLIST` ",
 			'LJK_JENIS' => "`LJK_JENIS` ",
-			'Laporan_N9' => "`Laporan_N9` ",
-			'Laporan_MLK' => "`Laporan_MLK` ",
+			'Laporan_N9_fiz' => "`Laporan_N9_fiz` ",
+			'Kew_n9' => "`Kew_n9` ",
+			'Laporan_MLK_fiz' => "`Laporan_MLK_fiz` ",
+			'Kew_MLK' => "`Kew_MLK` ",
 		];
 
 		$pkey = [
@@ -305,8 +311,10 @@
 			'ekasih' => 'id',
 			'BLACKLIST' => 'ID',
 			'LJK_JENIS' => 'id',
-			'Laporan_N9' => 'id',
-			'Laporan_MLK' => 'id',
+			'Laporan_N9_fiz' => 'id',
+			'Kew_n9' => 'ID',
+			'Laporan_MLK_fiz' => 'id',
+			'Kew_MLK' => 'ID',
 		];
 
 		if(!isset($sql_from[$table_name])) return false;
@@ -1080,7 +1088,7 @@
 				'id' => '',
 				'jenis_lampu' => '',
 			],
-			'Laporan_N9' => [
+			'Laporan_N9_fiz' => [
 				'id' => '',
 				'program' => '',
 				'peruntukan' => '',
@@ -1091,7 +1099,15 @@
 				'sp' => '',
 				'link' => '',
 			],
-			'Laporan_MLK' => [
+			'Kew_n9' => [
+				'ID' => '',
+				'program' => '',
+				'bil_projek' => '',
+				'peruntukan' => '',
+				'belanja' => '',
+				'jimat' => '',
+			],
+			'Laporan_MLK_fiz' => [
 				'id' => '',
 				'program' => '',
 				'peruntukan' => '',
@@ -1101,6 +1117,14 @@
 				'dp' => '',
 				'sp' => '',
 				'link' => '',
+			],
+			'Kew_MLK' => [
+				'ID' => '',
+				'program' => '',
+				'bil_projek' => '',
+				'peruntukan' => '',
+				'belanja' => '',
+				'jimat' => '',
 			],
 		];
 

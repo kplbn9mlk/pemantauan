@@ -1,0 +1,12 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the Kew_MLK_init() hook (in hooks/Kew_MLK.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="Kew_MLK-program-<%%VALUE(ID)%%>" class="Kew_MLK-program"><%%SELECT%%><%%VALUE(program)%%><%%ENDSELECT%%></td>
+		<td id="Kew_MLK-bil_projek-<%%VALUE(ID)%%>" class="Kew_MLK-bil_projek text-center"><%%SELECT%%><%%VALUE(bil_projek)%%><%%ENDSELECT%%></td>
+		<td id="Kew_MLK-peruntukan-<%%VALUE(ID)%%>" class="Kew_MLK-peruntukan text-right"><%%SELECT%%><%%VALUE(peruntukan)%%><%%ENDSELECT%%></td>
+		<td id="Kew_MLK-belanja-<%%VALUE(ID)%%>" class="Kew_MLK-belanja text-right"><%%SELECT%%><%%VALUE(belanja)%%><%%ENDSELECT%%></td>
+		<td id="Kew_MLK-jimat-<%%VALUE(ID)%%>" class="Kew_MLK-jimat text-right"><%%SELECT%%><%%VALUE(jimat)%%><%%ENDSELECT%%></td>

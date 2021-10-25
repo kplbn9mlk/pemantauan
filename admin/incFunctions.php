@@ -377,17 +377,31 @@
 					'group' => $tg[3],
 					'homepageShowCount' => 0
 				),
-				'Laporan_N9' => array(
-					'Caption' => 'KPLB N.SEMBILAN',
+				'Laporan_N9_fiz' => array(
+					'Caption' => 'FIZIKAL N.SEMBILAN',
 					'Description' => '',
 					'tableIcon' => 'resources/table_icons/report_edit.png',
 					'group' => $tg[0],
 					'homepageShowCount' => 0
 				),
-				'Laporan_MLK' => array(
-					'Caption' => 'KPLB MELAKA',
+				'Kew_n9' => array(
+					'Caption' => 'KEWANGAN NEGERI SEMBILAN',
+					'Description' => '',
+					'tableIcon' => 'table.gif',
+					'group' => $tg[0],
+					'homepageShowCount' => 0
+				),
+				'Laporan_MLK_fiz' => array(
+					'Caption' => 'FIZIKAL MELAKA',
 					'Description' => '',
 					'tableIcon' => 'resources/table_icons/report_edit.png',
+					'group' => $tg[0],
+					'homepageShowCount' => 0
+				),
+				'Kew_MLK' => array(
+					'Caption' => 'KEWANGAN MELAKA',
+					'Description' => '',
+					'tableIcon' => 'table.gif',
 					'group' => $tg[0],
 					'homepageShowCount' => 0
 				),
@@ -445,8 +459,10 @@
 				'ekasih' => 'Ekasih',
 				'BLACKLIST' => 'BLACKLIST',
 				'LJK_JENIS' => 'LJK JENIS',
-				'Laporan_N9' => 'KPLB N.SEMBILAN',
-				'Laporan_MLK' => 'KPLB MELAKA',
+				'Laporan_N9_fiz' => 'FIZIKAL N.SEMBILAN',
+				'Kew_n9' => 'KEWANGAN NEGERI SEMBILAN',
+				'Laporan_MLK_fiz' => 'FIZIKAL MELAKA',
+				'Kew_MLK' => 'KEWANGAN MELAKA',
 			);
 
 			return $arrTables;
@@ -2201,7 +2217,7 @@
 					'id' => ['appgini' => "INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT"],
 					'jenis_lampu' => ['appgini' => "VARCHAR(40) NULL"],
 				],
-				'Laporan_N9' => [
+				'Laporan_N9_fiz' => [
 					'id' => ['appgini' => "TINYINT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT"],
 					'program' => ['appgini' => "VARCHAR(100) NULL"],
 					'peruntukan' => ['appgini' => "INT NULL"],
@@ -2212,7 +2228,15 @@
 					'sp' => ['appgini' => "INT NULL"],
 					'link' => ['appgini' => "VARCHAR(100) NULL"],
 				],
-				'Laporan_MLK' => [
+				'Kew_n9' => [
+					'ID' => ['appgini' => "INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT"],
+					'program' => ['appgini' => "VARCHAR(100) NULL"],
+					'bil_projek' => ['appgini' => "INT NULL"],
+					'peruntukan' => ['appgini' => "DECIMAL(10,2) NULL"],
+					'belanja' => ['appgini' => "DECIMAL(10,2) NULL"],
+					'jimat' => ['appgini' => "DECIMAL(10,2) NULL"],
+				],
+				'Laporan_MLK_fiz' => [
 					'id' => ['appgini' => "INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT"],
 					'program' => ['appgini' => "VARCHAR(100) NULL"],
 					'peruntukan' => ['appgini' => "INT NULL"],
@@ -2222,6 +2246,14 @@
 					'dp' => ['appgini' => "INT NULL"],
 					'sp' => ['appgini' => "INT NULL"],
 					'link' => ['appgini' => "VARCHAR(100) NULL"],
+				],
+				'Kew_MLK' => [
+					'ID' => ['appgini' => "INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT"],
+					'program' => ['appgini' => "VARCHAR(100) NULL"],
+					'bil_projek' => ['appgini' => "INT NULL"],
+					'peruntukan' => ['appgini' => "DECIMAL(10,2) NULL"],
+					'belanja' => ['appgini' => "DECIMAL(10,2) NULL"],
+					'jimat' => ['appgini' => "DECIMAL(10,2) NULL"],
 				],
 			];
 		}
@@ -3709,9 +3741,13 @@ WHERE status_kelulusan_pprt.pemohon = %ID%',
 			),
 			'LJK_JENIS' => array(
 			),
-			'Laporan_N9' => array(
+			'Laporan_N9_fiz' => array(
 			),
-			'Laporan_MLK' => array(
+			'Kew_n9' => array(
+			),
+			'Laporan_MLK_fiz' => array(
+			),
+			'Kew_MLK' => array(
 			),
 		);
 	}
@@ -4113,9 +4149,13 @@ WHERE status_kelulusan_pprt.pemohon = %ID%',
 			],
 			'LJK_JENIS' => [
 			],
-			'Laporan_N9' => [
+			'Laporan_N9_fiz' => [
 			],
-			'Laporan_MLK' => [
+			'Kew_n9' => [
+			],
+			'Laporan_MLK_fiz' => [
+			],
+			'Kew_MLK' => [
 			],
 		];
 

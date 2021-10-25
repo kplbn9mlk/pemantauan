@@ -131,11 +131,11 @@
 			'gambar3' => getUploadDir(''),
 			'primary key' => 'ID'
 		],
-		'Laporan_N9' => [
+		'Laporan_N9_fiz' => [
 			'link' => '',
 			'primary key' => 'id'
 		],
-		'Laporan_MLK' => [
+		'Laporan_MLK_fiz' => [
 			'link' => '',
 			'primary key' => 'id'
 		],

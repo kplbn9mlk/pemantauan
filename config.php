@@ -2,14 +2,14 @@
 	$dbServer = 'localhost';
 	$dbUsername = 'root';
 	$dbPassword = '';
-	$dbDatabase = '2021';
-	$appURI = '2021';
-	$host = 'localhost';
+	$dbDatabase = 'pemantauan';
+	$appURI = 'pemantauan';
+	$host = 'appn9.rurallink.gov.my';
 
 	$adminConfig = [
-		'adminUsername' => "pentadbir",
-		'adminPassword' => "\$2y\$10\$mCv3SmDinpIpXWOS4t/kyOEwbJLt7Bm/asH4ROPckPQ9lU.gopIma",
-		'notifyAdminNewMembers' => "",
+		'adminUsername' => "admin",
+		'adminPassword' => "\$2y\$10\$RTxLqe9XIB48XH6ZeBDyRedXpdYirarqseg8ZwZ8JoQyottml8P16",
+		'notifyAdminNewMembers' => "0",
 		'defaultSignUp' => "1",
 		'anonymousGroup' => "anonymous",
 		'anonymousMember' => "guest",
@@ -24,9 +24,9 @@
 		'PHPDateFormat' => "j/n/Y",
 		'PHPDateTimeFormat' => "d/m/Y, h:i a",
 		'senderName' => "Membership management",
-		'senderEmail' => "pentadbir@rurallink.gov.my",
+		'senderEmail' => "nizar.khalid@rurallink.gov.my",
 		'approvalSubject' => "Your membership is now approved",
-		'approvalMessage' => "Dear member,\n\nYour membership is now approved by the admin. You can log in to your account here:\nhttp://localhost/2021\n\nRegards,\nAdmin",
+		'approvalMessage' => "Dear member,\r\n\r\nYour membership is now approved by the admin. You can log in to your account here:\r\nhttp://appn9.rurallink.gov.my/pemantauan\r\n\r\nRegards,\r\nAdmin",
 		'hide_twitter_feed' => "",
 		'maintenance_mode_message' => "<b>Our website is currently down for maintenance</b><br>\r\nWe expect to be back in a couple hours. Thanks for your patience.",
 		'mail_function' => "mail",
@@ -35,6 +35,6 @@
 		'smtp_port' => "25",
 		'smtp_user' => "",
 		'smtp_pass' => "",
-		'googleAPIKey' => "",
+		'googleAPIKey' => "AIzaSyBWg64i0Tb3EfET_RBmbC0ehYik-NVeKpc",
 		'baseUploadPath' => "images",
 	];

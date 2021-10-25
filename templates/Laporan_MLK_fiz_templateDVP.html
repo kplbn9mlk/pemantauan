@@ -1,0 +1,92 @@
+<!-- Edit this file to change the layout of the detail view print preview page -->
+
+
+<div class="panel-heading"><h3 class="panel-title">
+	<strong><%%DETAIL_VIEW_TITLE%%></strong>
+	<div class="hidden-print pull-right">
+		<div class="btn-group">
+			<button type="button" id="print" onclick="window.print();" title="<%%TRANSLATION(Print)%%>" class="btn btn-primary"><i class="glyphicon glyphicon-print"></i> <%%TRANSLATION(Print)%%></button>
+			<button type="submit" id="back" title="<%%TRANSLATION(Cancel Printing)%%>" class="btn btn-default"><i class="glyphicon glyphicon-remove-circle"></i> <%%TRANSLATION(Cancel Printing)%%></button>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</h3></div>
+
+<div class="panel-body">
+	<fieldset class="form-horizontal">
+		<!-- Field: ID -->
+		<div class="form-group Laporan_MLK_fiz-id" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">ID</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(id)%%></div>
+			</div>
+		</div>
+		<!-- Field: Program -->
+		<div class="form-group Laporan_MLK_fiz-program" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Program</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(program)%%></div>
+			</div>
+		</div>
+		<!-- Field: Peruntukan Diluluskan -->
+		<div class="form-group Laporan_MLK_fiz-peruntukan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Peruntukan Diluluskan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(peruntukan)%%></div>
+			</div>
+		</div>
+		<!-- Field: Bil Projek -->
+		<div class="form-group Laporan_MLK_fiz-bil_projek" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Bil Projek</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(bil_projek)%%></div>
+			</div>
+		</div>
+		<!-- Field: Belum Mula -->
+		<div class="form-group Laporan_MLK_fiz-bm" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Belum Mula</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(bm)%%></div>
+			</div>
+		</div>
+		<!-- Field: Perolehan -->
+		<div class="form-group Laporan_MLK_fiz-Perolehan" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Perolehan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(Perolehan)%%></div>
+			</div>
+		</div>
+		<!-- Field: Dalam Perlaksanaan -->
+		<div class="form-group Laporan_MLK_fiz-dp" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Dalam Perlaksanaan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(dp)%%></div>
+			</div>
+		</div>
+		<!-- Field: Siap Perlaksanaan -->
+		<div class="form-group Laporan_MLK_fiz-sp" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Siap Perlaksanaan</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><%%VALUE(sp)%%></div>
+			</div>
+		</div>
+		<!-- Field: Senarai -->
+		<div class="form-group Laporan_MLK_fiz-link" style="border-bottom: dotted 1px #DDD;">
+			<label class="col-xs-3 control-label">Senarai</label>
+			<div class="col-xs-9">
+				<div class="form-control-static"><a id="link-link" href="link.php?t=Laporan_MLK_fiz&f=link&i=<%%VALUE(id)%%>" target="_blank"><i class="glyphicon glyphicon-lg glyphicon-globe" title="<%%VALUE(link)%%>"></i></a><script>jQuery(function() { var e_link = '<%%VALUE(link)%%>'; if(e_link == '' || e_link == '&nbsp;' || e_link == 'blank.gif') jQuery('#link-link').hide(); });</script></div>
+			</div>
+		</div>
+	</fieldset>
+</div>
+<script>
+	$j(function() {
+		// render read-only checkboxes in DVP
+		$j('form input[type=checkbox]:not(.hidden):checked')
+			.addClass('hidden')
+			.after('<i class="glyphicon glyphicon-check"></i>');
+		$j('form input[type=checkbox]:not(.hidden):not(:checked)')
+			.addClass('hidden')
+			.after('<i class="glyphicon glyphicon-unchecked"></i>')
+	})
+</script>
